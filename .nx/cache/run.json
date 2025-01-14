@@ -1,0 +1,32 @@
+{
+  "run": {
+    "command": "nx run-many --target=build",
+    "startTime": "2025-01-14T15:44:27.052Z",
+    "endTime": "2025-01-14T15:44:57.237Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "http-gateway:build",
+      "target": "build",
+      "projectName": "http-gateway",
+      "hash": "18132439255344164939",
+      "startTime": "2025-01-14T15:44:27.062Z",
+      "endTime": "2025-01-14T15:44:30.082Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "dashboard:build",
+      "target": "build",
+      "projectName": "dashboard",
+      "hash": "8501426709298372651",
+      "startTime": "2025-01-14T15:44:27.062Z",
+      "endTime": "2025-01-14T15:44:57.236Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}
