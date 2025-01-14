@@ -42,24 +42,12 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "nx.json",
-        "hash": "9118486353125517118"
-      },
-      {
-        "file": "eslint.config.cjs",
-        "hash": "4219588132382477313"
-      },
-      {
-        "file": "package.json",
-        "hash": "15999418413888599633"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "16936441711144470533"
-      },
-      {
         "file": ".gitignore",
-        "hash": "6980558166641241265"
+        "hash": "10778829844551673618"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
       },
       {
         "file": ".prettierrc",
@@ -70,24 +58,36 @@
         "hash": "10066300031063478629"
       },
       {
-        "file": "pnpm-lock.yaml",
-        "hash": "4432939922320363518"
+        "file": "eslint.config.cjs",
+        "hash": "4219588132382477313"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "3494843969422251966"
       },
       {
         "file": "jest.preset.js",
         "hash": "9430166341120122740"
       },
       {
+        "file": "nx.json",
+        "hash": "9118486353125517118"
+      },
+      {
+        "file": "package.json",
+        "hash": "15999418413888599633"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "4432939922320363518"
+      },
+      {
         "file": "pnpm-workspace.yaml",
         "hash": "513348486832885260"
       },
       {
-        "file": ".prettierignore",
-        "hash": "14688272390704683536"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "3494843969422251966"
+        "file": "tsconfig.base.json",
+        "hash": "16936441711144470533"
       }
     ],
     "projectFileMap": {
@@ -110,26 +110,29 @@
         },
         {
           "file": "apps/api/user-service/package.json",
-          "hash": "3697760737561354678",
+          "hash": "13343211205000794837",
           "deps": [
             "npm:@nestjs/cli",
             "npm:@nestjs/schematics",
             "npm:@nestjs/testing",
+            "npm:@types/express@5.0.0",
             "npm:@types/jest",
-            "npm:@types/node",
+            "npm:@types/node@20.17.12",
             "npm:@types/supertest",
             "npm:@typescript-eslint/eslint-plugin",
             "npm:@typescript-eslint/parser",
-            "npm:eslint",
-            "npm:eslint-config-prettier",
+            "npm:eslint@8.57.1",
+            "npm:eslint-config-prettier@9.1.0",
             "npm:eslint-plugin-prettier",
             "npm:jest",
             "npm:prettier",
+            "npm:source-map-support@0.5.21",
             "npm:supertest",
             "npm:ts-jest",
             "npm:ts-loader",
-            "npm:ts-node",
-            "npm:typescript",
+            "npm:ts-node@10.9.1",
+            "npm:tsconfig-paths@4.2.0",
+            "npm:typescript@5.6.3",
             "npm:@nestjs/common",
             "npm:@nestjs/core",
             "npm:@nestjs/platform-express",
@@ -249,9 +252,10 @@
         },
         {
           "file": "apps/api/http-gateway/src/app.module.ts",
-          "hash": "11673476679848632172",
+          "hash": "13774716278124962050",
           "deps": [
-            "npm:@nestjs/common"
+            "npm:@nestjs/common",
+            "npm:@nestjs/microservices"
           ]
         },
         {
@@ -270,7 +274,7 @@
         },
         {
           "file": "apps/api/http-gateway/src/user-tcp.controller.ts",
-          "hash": "245026517251281306",
+          "hash": "14760316045157488620",
           "deps": [
             "npm:@nestjs/common",
             "npm:@nestjs/swagger",

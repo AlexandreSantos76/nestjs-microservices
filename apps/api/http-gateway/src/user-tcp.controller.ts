@@ -18,15 +18,13 @@ import { ClientProxy } from '@nestjs/microservices';
 @Controller('users')
 @ApiTags('users')
 export class UserTcpController {
-    constructor(@Inject('USER_SERVICE') private readonly client: ClientProxy) { }
+    constructor(@Inject('USER_SERVICE') private readonly user_client: ClientProxy) { }
 
-    @Get()
-    async hello(@Req() req: any) {
-        try {
-            const result = await this.client.send({ cmd: 'hello' }, {});
-            return result;
-        } catch (error) {
-            throw new HttpException(error, HttpStatus.INTERNAL_SERVER_ERROR);
-        }
+    @Get("hello")
+    hello(@Body() body: any) {
+        return this.user_client.send(
+            { cmd: 'hello' },
+            body
+        );
     }
 }
