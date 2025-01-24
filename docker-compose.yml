@@ -1,0 +1,120 @@
+services:
+  # Serviço global para Node.js (PNPM)
+  node:
+    image: node:20-slim
+    container_name: monorepo-fullcycle
+    working_dir: /workspace
+    volumes:
+      - .:/workspace:cached
+    command: sh -c "while sleep 3600; do :; done"
+
+  # Serviço do http-gateway
+  # http-gateway:
+  #   build:
+  #     context: ./apps/api/http-gateway
+  #     dockerfile: Dockerfile
+  #   container_name: http-gateway
+  #   working_dir: /workspace
+  #   volumes:
+  #     - .:/workspace:cached
+  #   ports:
+  #     - 9000:9000
+  #   depends_on:
+  #     - node
+
+  # # Serviço do user-management
+  # user-service:
+  #   build:
+  #     context: ./apps/api/user-service
+  #     dockerfile: Dockerfile
+  #   container_name: user-service
+  #   working_dir: /workspace
+  #   volumes:
+  #     - .:/workspace:cached
+  #   ports:
+  #     - 9001:9001
+  #   environment:
+  #     - NODE_ENV=development
+  #     - SERVICE_NAME=user-management
+  #     - POSTGRES_URL=postgres://fullcycle:admin@postgres:6432/monorepo
+  #     - REDIS_HOST=redis
+  #     - REDIS_PORT=6379
+  #   depends_on:
+  #     - node
+  #     - postgres
+  #     - redis
+
+  # Serviço do auth
+  # auth:
+  #   build:
+  #     context: ./apps/auth
+  #     dockerfile: Dockerfile
+  #   container_name: auth
+  #   working_dir: /workspace
+  #   volumes:
+  #     - .:/workspace:cached
+  #   ports:
+  #     - 3002:3002
+  #   environment:
+  #     - NODE_ENV=development
+  #     - SERVICE_NAME=auth
+  #     - POSTGRES_URL=postgres://pg_admin:admin@postgres:6432/monorepo
+  #     - REDIS_HOST=redis
+  #     - REDIS_PORT=6379
+  #   depends_on:
+  #     - node
+  #     - postgres
+  #     - redis
+
+  # Serviço do PostgreSQL
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: fullcycle
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: monorepo
+    ports:
+      - 6432:5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - fullcycle-network
+
+  # Serviço do PgAdmin
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - '6050:80'
+    depends_on:
+      - postgres
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    networks:
+      - fullcycle-network
+
+  # Serviço do Redis
+  redis:
+    image: redis:7
+    container_name: redis
+    restart: always
+    ports:
+      - '6379:6379'
+    volumes:
+      - redis_data:/data
+    networks:
+      - fullcycle-network
+
+volumes:
+  postgres_data:
+  redis_data:
+  pgadmin_data:
+
+networks:
+  fullcycle-network:
+    driver: bridge

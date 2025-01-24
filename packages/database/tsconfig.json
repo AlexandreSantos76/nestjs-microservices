@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS", // Alterado de "commonjs" para "ESNext"
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noPropertyAccessFromIndexSignature": true
+  }
+}

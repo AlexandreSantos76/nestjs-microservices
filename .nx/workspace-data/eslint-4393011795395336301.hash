@@ -1,19 +1,18 @@
 {
-  "9251429786655574986": {},
-  "2344885671834770701": {
-    "apps/frontend/dashboard-e2e": {
+  "2764480095999669138": {
+    "apps/api/http-gateway": {
       "targets": {
         "lint": {
           "command": "eslint .",
           "cache": true,
           "options": {
-            "cwd": "apps/frontend/dashboard-e2e"
+            "cwd": "apps/api/http-gateway"
           },
           "inputs": [
             "default",
             "^default",
             "{workspaceRoot}/eslint.config.cjs",
-            "{projectRoot}/eslint.config.cjs",
+            "{projectRoot}/.eslintrc.js",
             "{workspaceRoot}/tools/eslint-rules/**/*",
             {
               "externalDependencies": [
@@ -42,7 +41,175 @@
       }
     }
   },
-  "11665969835978496569": {
+  "4230370558365978145": {
+    "apps/api/user-service": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "apps/api/user-service"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.cjs",
+            "{projectRoot}/.eslintrc.js",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "pnpm exec eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "17815857299029984558": {
+    "packages/config": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "packages/config"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.cjs",
+            "{projectRoot}/.eslintrc.js",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "pnpm exec eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "11577548532231455181": {
+    "packages/logger": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "packages/logger"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.cjs",
+            "{projectRoot}/.eslintrc.js",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "pnpm exec eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "15014746903174728450": {},
+  "4269851129919510976": {
+    "packages/database": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "packages/database"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.cjs",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "pnpm exec eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "1530127047463031603": {
     "apps/frontend/dashboard": {
       "targets": {
         "lint": {
@@ -84,59 +251,15 @@
       }
     }
   },
-  "3550788962083853738": {},
-  "14324294594663440723": {},
-  "16638851271206376600": {},
-  "6390321718002654822": {
-    "apps/frontend/dashboard": {
+  "12554249282722160148": {},
+  "2555805114647822174": {
+    "packages/database": {
       "targets": {
         "lint": {
           "command": "eslint .",
           "cache": true,
           "options": {
-            "cwd": "apps/frontend/dashboard"
-          },
-          "inputs": [
-            "default",
-            "^default",
-            "{workspaceRoot}/eslint.config.cjs",
-            "{projectRoot}/eslint.config.cjs",
-            "{workspaceRoot}/tools/eslint-rules/**/*",
-            {
-              "externalDependencies": [
-                "eslint"
-              ]
-            }
-          ],
-          "outputs": [
-            "{options.outputFile}"
-          ],
-          "metadata": {
-            "technologies": [
-              "eslint"
-            ],
-            "description": "Runs ESLint on project",
-            "help": {
-              "command": "pnpm exec eslint --help",
-              "example": {
-                "options": {
-                  "max-warnings": 0
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  },
-  "15915066338655632974": {
-    "apps/api/http-gateway": {
-      "targets": {
-        "lint": {
-          "command": "eslint .",
-          "cache": true,
-          "options": {
-            "cwd": "apps/api/http-gateway"
+            "cwd": "packages/database"
           },
           "inputs": [
             "default",
@@ -170,142 +293,7 @@
       }
     }
   },
-  "3053936309526266999": {},
-  "1069082424373450847": {
-    "apps/api/http-gateway-e2e": {
-      "targets": {
-        "lint": {
-          "command": "eslint .",
-          "cache": true,
-          "options": {
-            "cwd": "apps/api/http-gateway-e2e"
-          },
-          "inputs": [
-            "default",
-            "^default",
-            "{workspaceRoot}/eslint.config.cjs",
-            "{workspaceRoot}/tools/eslint-rules/**/*",
-            {
-              "externalDependencies": [
-                "eslint"
-              ]
-            }
-          ],
-          "outputs": [
-            "{options.outputFile}"
-          ],
-          "metadata": {
-            "technologies": [
-              "eslint"
-            ],
-            "description": "Runs ESLint on project",
-            "help": {
-              "command": "pnpm exec eslint --help",
-              "example": {
-                "options": {
-                  "max-warnings": 0
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  },
-  "7191810745720767730": {},
-  "1403582778509273900": {},
-  "15426013583859921356": {},
-  "2795638174310256217": {},
-  "4394683389093759972": {},
-  "6320314181228340113": {},
-  "8486486344125253172": {},
-  "3682152709221247520": {
-    "apps/api/http-gateway": {
-      "targets": {
-        "lint": {
-          "command": "eslint .",
-          "cache": true,
-          "options": {
-            "cwd": "apps/api/http-gateway"
-          },
-          "inputs": [
-            "default",
-            "^default",
-            "{workspaceRoot}/eslint.config.cjs",
-            "{projectRoot}/.eslintrc.js",
-            "{workspaceRoot}/tools/eslint-rules/**/*",
-            {
-              "externalDependencies": [
-                "eslint"
-              ]
-            }
-          ],
-          "outputs": [
-            "{options.outputFile}"
-          ],
-          "metadata": {
-            "technologies": [
-              "eslint"
-            ],
-            "description": "Runs ESLint on project",
-            "help": {
-              "command": "pnpm exec eslint --help",
-              "example": {
-                "options": {
-                  "max-warnings": 0
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  },
-  "3956153793270329755": {},
-  "1552614427442136084": {
-    "apps/api/http-gateway": {
-      "targets": {
-        "lint": {
-          "command": "eslint .",
-          "cache": true,
-          "options": {
-            "cwd": "apps/api/http-gateway"
-          },
-          "inputs": [
-            "default",
-            "^default",
-            "{workspaceRoot}/eslint.config.cjs",
-            "{projectRoot}/.eslintrc.js",
-            "{workspaceRoot}/tools/eslint-rules/**/*",
-            {
-              "externalDependencies": [
-                "eslint"
-              ]
-            }
-          ],
-          "outputs": [
-            "{options.outputFile}"
-          ],
-          "metadata": {
-            "technologies": [
-              "eslint"
-            ],
-            "description": "Runs ESLint on project",
-            "help": {
-              "command": "pnpm exec eslint --help",
-              "example": {
-                "options": {
-                  "max-warnings": 0
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  },
-  "3726667814851807668": {},
-  "17411537849133494438": {
+  "6939163513179795695": {
     "apps/api/user-service": {
       "targets": {
         "lint": {
@@ -347,28 +335,22 @@
       }
     }
   },
-  "3973793551752352931": {},
-  "2339676364282363433": {},
-  "12594295830368325184": {},
-  "10418707788137378651": {},
-  "7253330825173498243": {},
-  "12832615862285393213": {},
-  "9477864123865219387": {},
-  "12680980224189767656": {},
-  "10953784087624227195": {
-    "apps/api/http-gateway": {
+  "13592932986042438050": {},
+  "4028288951830445806": {},
+  "10541437864651489681": {},
+  "7880739500829076386": {
+    "packages/database": {
       "targets": {
         "lint": {
           "command": "eslint .",
           "cache": true,
           "options": {
-            "cwd": "apps/api/http-gateway"
+            "cwd": "packages/database"
           },
           "inputs": [
             "default",
             "^default",
             "{workspaceRoot}/eslint.config.cjs",
-            "{projectRoot}/.eslintrc.js",
             "{workspaceRoot}/tools/eslint-rules/**/*",
             {
               "externalDependencies": [
@@ -397,21 +379,20 @@
       }
     }
   },
-  "689674977273109733": {},
-  "8327495180648842104": {
-    "apps/api/http-gateway": {
+  "16305720323139288971": {},
+  "16184607567373822798": {
+    "packages/database": {
       "targets": {
         "lint": {
           "command": "eslint .",
           "cache": true,
           "options": {
-            "cwd": "apps/api/http-gateway"
+            "cwd": "packages/database"
           },
           "inputs": [
             "default",
             "^default",
             "{workspaceRoot}/eslint.config.cjs",
-            "{projectRoot}/.eslintrc.js",
             "{workspaceRoot}/tools/eslint-rules/**/*",
             {
               "externalDependencies": [
@@ -440,21 +421,20 @@
       }
     }
   },
-  "8240517548689943981": {},
-  "9081786838157506698": {
-    "apps/api/http-gateway": {
+  "10707790548423976313": {},
+  "16505348073403817593": {
+    "packages/database": {
       "targets": {
         "lint": {
           "command": "eslint .",
           "cache": true,
           "options": {
-            "cwd": "apps/api/http-gateway"
+            "cwd": "packages/database"
           },
           "inputs": [
             "default",
             "^default",
             "{workspaceRoot}/eslint.config.cjs",
-            "{projectRoot}/.eslintrc.js",
             "{workspaceRoot}/tools/eslint-rules/**/*",
             {
               "externalDependencies": [
@@ -483,24 +463,20 @@
       }
     }
   },
-  "15244205178676638106": {},
-  "3765002779897020834": {},
-  "177625108134710063": {},
-  "12271526636346133353": {},
-  "5542891554699887329": {
-    "apps/api/http-gateway": {
+  "13956618942846676159": {},
+  "10497073310419356059": {
+    "packages/database": {
       "targets": {
         "lint": {
           "command": "eslint .",
           "cache": true,
           "options": {
-            "cwd": "apps/api/http-gateway"
+            "cwd": "packages/database"
           },
           "inputs": [
             "default",
             "^default",
             "{workspaceRoot}/eslint.config.cjs",
-            "{projectRoot}/.eslintrc.js",
             "{workspaceRoot}/tools/eslint-rules/**/*",
             {
               "externalDependencies": [
@@ -529,21 +505,20 @@
       }
     }
   },
-  "4586824552829913696": {},
-  "7752607014044436766": {
-    "apps/api/http-gateway": {
+  "5798806746069131596": {},
+  "9922436196935970396": {
+    "packages/database": {
       "targets": {
         "lint": {
           "command": "eslint .",
           "cache": true,
           "options": {
-            "cwd": "apps/api/http-gateway"
+            "cwd": "packages/database"
           },
           "inputs": [
             "default",
             "^default",
             "{workspaceRoot}/eslint.config.cjs",
-            "{projectRoot}/.eslintrc.js",
             "{workspaceRoot}/tools/eslint-rules/**/*",
             {
               "externalDependencies": [
@@ -572,21 +547,20 @@
       }
     }
   },
-  "6863982901749099299": {},
-  "8330527334601310525": {
-    "apps/api/http-gateway": {
+  "12524645791591821323": {},
+  "12347731370756090347": {
+    "packages/database": {
       "targets": {
         "lint": {
           "command": "eslint .",
           "cache": true,
           "options": {
-            "cwd": "apps/api/http-gateway"
+            "cwd": "packages/database"
           },
           "inputs": [
             "default",
             "^default",
             "{workspaceRoot}/eslint.config.cjs",
-            "{projectRoot}/.eslintrc.js",
             "{workspaceRoot}/tools/eslint-rules/**/*",
             {
               "externalDependencies": [
@@ -615,20 +589,20 @@
       }
     }
   },
-  "14738680273718333111": {
-    "apps/api/user-service": {
+  "12476248497844218206": {},
+  "5948313908537104261": {
+    "packages/database": {
       "targets": {
         "lint": {
           "command": "eslint .",
           "cache": true,
           "options": {
-            "cwd": "apps/api/user-service"
+            "cwd": "packages/database"
           },
           "inputs": [
             "default",
             "^default",
             "{workspaceRoot}/eslint.config.cjs",
-            "{projectRoot}/.eslintrc.js",
             "{workspaceRoot}/tools/eslint-rules/**/*",
             {
               "externalDependencies": [
@@ -657,21 +631,20 @@
       }
     }
   },
-  "1456544031997086142": {},
-  "16146591320398117005": {
-    "apps/api/user-service": {
+  "14576404421769515308": {},
+  "18072032192542536475": {
+    "packages/database": {
       "targets": {
         "lint": {
           "command": "eslint .",
           "cache": true,
           "options": {
-            "cwd": "apps/api/user-service"
+            "cwd": "packages/database"
           },
           "inputs": [
             "default",
             "^default",
             "{workspaceRoot}/eslint.config.cjs",
-            "{projectRoot}/.eslintrc.js",
             "{workspaceRoot}/tools/eslint-rules/**/*",
             {
               "externalDependencies": [
@@ -700,394 +673,7 @@
       }
     }
   },
-  "8235890223877174789": {},
-  "8827234812013590705": {
-    "apps/api/user-service": {
-      "targets": {
-        "lint": {
-          "command": "eslint .",
-          "cache": true,
-          "options": {
-            "cwd": "apps/api/user-service"
-          },
-          "inputs": [
-            "default",
-            "^default",
-            "{workspaceRoot}/eslint.config.cjs",
-            "{projectRoot}/.eslintrc.js",
-            "{workspaceRoot}/tools/eslint-rules/**/*",
-            {
-              "externalDependencies": [
-                "eslint"
-              ]
-            }
-          ],
-          "outputs": [
-            "{options.outputFile}"
-          ],
-          "metadata": {
-            "technologies": [
-              "eslint"
-            ],
-            "description": "Runs ESLint on project",
-            "help": {
-              "command": "pnpm exec eslint --help",
-              "example": {
-                "options": {
-                  "max-warnings": 0
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  },
-  "9624126260295039465": {},
-  "13779138386026325540": {
-    "apps/api/http-gateway": {
-      "targets": {
-        "lint": {
-          "command": "eslint .",
-          "cache": true,
-          "options": {
-            "cwd": "apps/api/http-gateway"
-          },
-          "inputs": [
-            "default",
-            "^default",
-            "{workspaceRoot}/eslint.config.cjs",
-            "{projectRoot}/.eslintrc.js",
-            "{workspaceRoot}/tools/eslint-rules/**/*",
-            {
-              "externalDependencies": [
-                "eslint"
-              ]
-            }
-          ],
-          "outputs": [
-            "{options.outputFile}"
-          ],
-          "metadata": {
-            "technologies": [
-              "eslint"
-            ],
-            "description": "Runs ESLint on project",
-            "help": {
-              "command": "pnpm exec eslint --help",
-              "example": {
-                "options": {
-                  "max-warnings": 0
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  },
-  "12943474899013245440": {},
-  "5968838709119550597": {
-    "apps/api/http-gateway": {
-      "targets": {
-        "lint": {
-          "command": "eslint .",
-          "cache": true,
-          "options": {
-            "cwd": "apps/api/http-gateway"
-          },
-          "inputs": [
-            "default",
-            "^default",
-            "{workspaceRoot}/eslint.config.cjs",
-            "{projectRoot}/.eslintrc.js",
-            "{workspaceRoot}/tools/eslint-rules/**/*",
-            {
-              "externalDependencies": [
-                "eslint"
-              ]
-            }
-          ],
-          "outputs": [
-            "{options.outputFile}"
-          ],
-          "metadata": {
-            "technologies": [
-              "eslint"
-            ],
-            "description": "Runs ESLint on project",
-            "help": {
-              "command": "pnpm exec eslint --help",
-              "example": {
-                "options": {
-                  "max-warnings": 0
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  },
-  "11304752449404910555": {},
-  "10770427051370496774": {},
-  "14158228641574022924": {
-    "apps/api/http-gateway": {
-      "targets": {
-        "lint": {
-          "command": "eslint .",
-          "cache": true,
-          "options": {
-            "cwd": "apps/api/http-gateway"
-          },
-          "inputs": [
-            "default",
-            "^default",
-            "{workspaceRoot}/eslint.config.cjs",
-            "{projectRoot}/.eslintrc.js",
-            "{workspaceRoot}/tools/eslint-rules/**/*",
-            {
-              "externalDependencies": [
-                "eslint"
-              ]
-            }
-          ],
-          "outputs": [
-            "{options.outputFile}"
-          ],
-          "metadata": {
-            "technologies": [
-              "eslint"
-            ],
-            "description": "Runs ESLint on project",
-            "help": {
-              "command": "pnpm exec eslint --help",
-              "example": {
-                "options": {
-                  "max-warnings": 0
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  },
-  "4600668546327936971": {},
-  "2921712711436460866": {
-    "apps/api/http-gateway": {
-      "targets": {
-        "lint": {
-          "command": "eslint .",
-          "cache": true,
-          "options": {
-            "cwd": "apps/api/http-gateway"
-          },
-          "inputs": [
-            "default",
-            "^default",
-            "{workspaceRoot}/eslint.config.cjs",
-            "{projectRoot}/.eslintrc.js",
-            "{workspaceRoot}/tools/eslint-rules/**/*",
-            {
-              "externalDependencies": [
-                "eslint"
-              ]
-            }
-          ],
-          "outputs": [
-            "{options.outputFile}"
-          ],
-          "metadata": {
-            "technologies": [
-              "eslint"
-            ],
-            "description": "Runs ESLint on project",
-            "help": {
-              "command": "pnpm exec eslint --help",
-              "example": {
-                "options": {
-                  "max-warnings": 0
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  },
-  "17488373171148116107": {},
-  "307205714992564228": {
-    "apps/api/user-service": {
-      "targets": {
-        "lint": {
-          "command": "eslint .",
-          "cache": true,
-          "options": {
-            "cwd": "apps/api/user-service"
-          },
-          "inputs": [
-            "default",
-            "^default",
-            "{workspaceRoot}/eslint.config.cjs",
-            "{projectRoot}/.eslintrc.js",
-            "{workspaceRoot}/tools/eslint-rules/**/*",
-            {
-              "externalDependencies": [
-                "eslint"
-              ]
-            }
-          ],
-          "outputs": [
-            "{options.outputFile}"
-          ],
-          "metadata": {
-            "technologies": [
-              "eslint"
-            ],
-            "description": "Runs ESLint on project",
-            "help": {
-              "command": "pnpm exec eslint --help",
-              "example": {
-                "options": {
-                  "max-warnings": 0
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  },
-  "5217046967628125765": {},
-  "3930954955281499231": {
-    "apps/api/http-gateway": {
-      "targets": {
-        "lint": {
-          "command": "eslint .",
-          "cache": true,
-          "options": {
-            "cwd": "apps/api/http-gateway"
-          },
-          "inputs": [
-            "default",
-            "^default",
-            "{workspaceRoot}/eslint.config.cjs",
-            "{projectRoot}/.eslintrc.js",
-            "{workspaceRoot}/tools/eslint-rules/**/*",
-            {
-              "externalDependencies": [
-                "eslint"
-              ]
-            }
-          ],
-          "outputs": [
-            "{options.outputFile}"
-          ],
-          "metadata": {
-            "technologies": [
-              "eslint"
-            ],
-            "description": "Runs ESLint on project",
-            "help": {
-              "command": "pnpm exec eslint --help",
-              "example": {
-                "options": {
-                  "max-warnings": 0
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  },
-  "10298545010109233012": {},
-  "8157956970039508236": {
-    "apps/api/http-gateway": {
-      "targets": {
-        "lint": {
-          "command": "eslint .",
-          "cache": true,
-          "options": {
-            "cwd": "apps/api/http-gateway"
-          },
-          "inputs": [
-            "default",
-            "^default",
-            "{workspaceRoot}/eslint.config.cjs",
-            "{projectRoot}/.eslintrc.js",
-            "{workspaceRoot}/tools/eslint-rules/**/*",
-            {
-              "externalDependencies": [
-                "eslint"
-              ]
-            }
-          ],
-          "outputs": [
-            "{options.outputFile}"
-          ],
-          "metadata": {
-            "technologies": [
-              "eslint"
-            ],
-            "description": "Runs ESLint on project",
-            "help": {
-              "command": "pnpm exec eslint --help",
-              "example": {
-                "options": {
-                  "max-warnings": 0
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  },
-  "13706405491896799930": {},
-  "9838443933982547438": {
-    "apps/api/http-gateway": {
-      "targets": {
-        "lint": {
-          "command": "eslint .",
-          "cache": true,
-          "options": {
-            "cwd": "apps/api/http-gateway"
-          },
-          "inputs": [
-            "default",
-            "^default",
-            "{workspaceRoot}/eslint.config.cjs",
-            "{projectRoot}/.eslintrc.js",
-            "{workspaceRoot}/tools/eslint-rules/**/*",
-            {
-              "externalDependencies": [
-                "eslint"
-              ]
-            }
-          ],
-          "outputs": [
-            "{options.outputFile}"
-          ],
-          "metadata": {
-            "technologies": [
-              "eslint"
-            ],
-            "description": "Runs ESLint on project",
-            "help": {
-              "command": "pnpm exec eslint --help",
-              "example": {
-                "options": {
-                  "max-warnings": 0
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  },
-  "2010864754631618890": {},
-  "14870912305512998955": {}
+  "13663806759665281346": {},
+  "14321184602256549261": {},
+  "17638121716971204582": {}
 }
