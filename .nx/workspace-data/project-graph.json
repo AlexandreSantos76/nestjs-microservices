@@ -499,8 +499,8 @@
         "implicitDependencies": []
       }
     },
-    "database": {
-      "name": "database",
+    "@fullcycle/database": {
+      "name": "@fullcycle/database",
       "type": "lib",
       "data": {
         "root": "packages/database",
@@ -544,15 +544,9 @@
             "parallelism": true
           },
           "test": {
-            "options": {
-              "cwd": "packages/database",
-              "env": {
-                "TS_NODE_COMPILER_OPTIONS": "{\"moduleResolution\":\"node10\"}"
-              },
-              "command": "jest"
-            },
             "metadata": {
               "technologies": [
+                "jest",
                 "jest"
               ],
               "description": "Run Jest Tests",
@@ -580,6 +574,13 @@
               "{workspaceRoot}/coverage/packages/database"
             ],
             "executor": "nx:run-commands",
+            "options": {
+              "cwd": "packages/database",
+              "env": {
+                "TS_NODE_COMPILER_OPTIONS": "{\"moduleResolution\":\"node10\"}"
+              },
+              "command": "jest"
+            },
             "configurations": {},
             "parallelism": true
           },
@@ -609,7 +610,7 @@
           }
         },
         "sourceRoot": "packages/database/src",
-        "name": "database",
+        "name": "@fullcycle/database",
         "tags": [
           "npm:private"
         ],
@@ -13812,6 +13813,15 @@
         "hash": "sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ=="
       }
     },
+    "npm:tsc": {
+      "type": "npm",
+      "name": "npm:tsc",
+      "data": {
+        "version": "2.0.4",
+        "packageName": "tsc",
+        "hash": "sha512-fzoSieZI5KKJVBYGvwbVZs/J5za84f2lSTLPYf6AGiIf43tZ3GNrI1QzTLcjtyDDP4aLxd46RTZq1nQxe7+k5Q=="
+      }
+    },
     "npm:tsconfig-paths-webpack-plugin@4.0.0": {
       "type": "npm",
       "name": "npm:tsconfig-paths-webpack-plugin@4.0.0",
@@ -14974,7 +14984,7 @@
       },
       {
         "source": "user-service",
-        "target": "database",
+        "target": "@fullcycle/database",
         "type": "static"
       },
       {
@@ -15023,49 +15033,49 @@
         "type": "static"
       }
     ],
-    "database": [
+    "@fullcycle/database": [
       {
-        "source": "database",
+        "source": "@fullcycle/database",
         "target": "npm:@nestjs/common",
         "type": "static"
       },
       {
-        "source": "database",
+        "source": "@fullcycle/database",
         "target": "npm:@nestjs/core",
         "type": "static"
       },
       {
-        "source": "database",
+        "source": "@fullcycle/database",
         "target": "npm:prisma",
         "type": "static"
       },
       {
-        "source": "database",
+        "source": "@fullcycle/database",
         "target": "npm:reflect-metadata",
         "type": "static"
       },
       {
-        "source": "database",
-        "target": "npm:rxjs",
-        "type": "static"
-      },
-      {
-        "source": "database",
+        "source": "@fullcycle/database",
         "target": "npm:ts-node",
         "type": "static"
       },
       {
-        "source": "database",
+        "source": "@fullcycle/database",
+        "target": "npm:tsc",
+        "type": "static"
+      },
+      {
+        "source": "@fullcycle/database",
         "target": "npm:typescript",
         "type": "static"
       },
       {
-        "source": "database",
+        "source": "@fullcycle/database",
         "target": "npm:@prisma/client",
         "type": "static"
       },
       {
-        "source": "database",
+        "source": "@fullcycle/database",
         "target": "npm:tslib",
         "type": "static"
       }

@@ -13032,6 +13032,15 @@
         "hash": "sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ=="
       }
     },
+    "npm:tsc": {
+      "type": "npm",
+      "name": "npm:tsc",
+      "data": {
+        "version": "2.0.4",
+        "packageName": "tsc",
+        "hash": "sha512-fzoSieZI5KKJVBYGvwbVZs/J5za84f2lSTLPYf6AGiIf43tZ3GNrI1QzTLcjtyDDP4aLxd46RTZq1nQxe7+k5Q=="
+      }
+    },
     "npm:tsconfig-paths-webpack-plugin@4.0.0": {
       "type": "npm",
       "name": "npm:tsconfig-paths-webpack-plugin@4.0.0",

@@ -3,9 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "license": "UNLICENSED",
-  "main": "./src/index.js",
-  "types": "./src/index.d.ts",
-  "type": "module",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
   "scripts": {
     "build": "tsc"
   },
@@ -18,8 +17,8 @@
     "@nestjs/core": "^11.0.5",
     "prisma": "6.2.1",
     "reflect-metadata": "^0.2.2",
-    "rxjs": "^7.8.1",
     "ts-node": "^10.9.2",
+    "tsc": "^2.0.4",
     "typescript": "^5.7.3"
   }
 }

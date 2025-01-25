@@ -1,17 +1,21 @@
 {
-  "name": "database",
+  "name": "@fullcycle/database",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/database/src",
   "projectType": "library",
   "targets": {
     "build": {
       "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/packages/database",
         "main": "packages/database/src/index.ts",
         "tsConfig": "packages/database/tsconfig.lib.json",
-        "assets": ["packages/database/*.md"]
+        "assets": [
+          "packages/database/*.md"
+        ]
       }
     }
   },

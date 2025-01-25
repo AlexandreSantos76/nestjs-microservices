@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx build @fullcycle/database",
+    "startTime": "2025-01-25T15:04:18.623Z",
+    "endTime": "2025-01-25T15:04:19.115Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "@fullcycle/database:build",
+      "target": "build",
+      "projectName": "@fullcycle/database",
+      "hash": "17861357754060711396",
+      "startTime": "2025-01-25T15:04:18.635Z",
+      "endTime": "2025-01-25T15:04:19.114Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}

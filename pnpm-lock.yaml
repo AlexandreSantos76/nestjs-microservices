@@ -466,12 +466,12 @@ importers:
       reflect-metadata:
         specifier: ^0.2.2
         version: 0.2.2
-      rxjs:
-        specifier: ^7.8.1
-        version: 7.8.1
       ts-node:
         specifier: ^10.9.2
         version: 10.9.2(@swc/core@1.10.9(@swc/helpers@0.5.15))(@types/node@22.10.9)(typescript@5.7.3)
+      tsc:
+        specifier: ^2.0.4
+        version: 2.0.4
       typescript:
         specifier: ^5.7.3
         version: 5.7.3
@@ -7127,6 +7127,10 @@ packages:
         optional: true
       '@swc/wasm':
         optional: true
+
+  tsc@2.0.4:
+    resolution: {integrity: sha512-fzoSieZI5KKJVBYGvwbVZs/J5za84f2lSTLPYf6AGiIf43tZ3GNrI1QzTLcjtyDDP4aLxd46RTZq1nQxe7+k5Q==}
+    hasBin: true
 
   tsconfig-paths-webpack-plugin@4.0.0:
     resolution: {integrity: sha512-fw/7265mIWukrSHd0i+wSwx64kYUSAKPfxRDksjKIYTxSAp9W9/xcZVBF4Kl0eqQd5eBpAQ/oQrc5RyM/0c1GQ==}
@@ -15564,6 +15568,8 @@ snapshots:
       yn: 3.1.1
     optionalDependencies:
       '@swc/core': 1.10.9(@swc/helpers@0.5.15)
+
+  tsc@2.0.4: {}
 
   tsconfig-paths-webpack-plugin@4.0.0:
     dependencies:
