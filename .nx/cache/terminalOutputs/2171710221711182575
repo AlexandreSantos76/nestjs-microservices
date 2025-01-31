@@ -1,0 +1,4 @@
+
+> user-service@0.0.1 clear /home/xande/jobs/full-cycle/nestjs-microservices/apps/api/user-service
+> rimraf dist && rimraf node_modules
+

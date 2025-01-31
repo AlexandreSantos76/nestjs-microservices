@@ -1,20 +1,20 @@
 {
   "run": {
-    "command": "nx build @fullcycle/database",
-    "startTime": "2025-01-25T15:04:18.623Z",
-    "endTime": "2025-01-25T15:04:19.115Z",
+    "command": "nx test http-gateway",
+    "startTime": "2025-01-30T15:38:23.697Z",
+    "endTime": "2025-01-30T15:38:23.711Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "@fullcycle/database:build",
-      "target": "build",
-      "projectName": "@fullcycle/database",
-      "hash": "17861357754060711396",
-      "startTime": "2025-01-25T15:04:18.635Z",
-      "endTime": "2025-01-25T15:04:19.114Z",
+      "taskId": "http-gateway:test",
+      "target": "test",
+      "projectName": "http-gateway",
+      "hash": "713791650094313335",
+      "startTime": "2025-01-30T15:38:23.707Z",
+      "endTime": "2025-01-30T15:38:23.710Z",
       "params": "",
-      "cacheStatus": "cache-miss",
+      "cacheStatus": "local-cache-hit",
       "status": 0
     }
   ]

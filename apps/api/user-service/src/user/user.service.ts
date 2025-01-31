@@ -1,11 +1,10 @@
-import { Injectable } from '@nestjs/common';
-import { CreateUserDto } from './dto/create-user.dto';
-import { UpdateUserDto } from './dto/update-user.dto';
-import { PrismaService } from "@fullcycle/database";
-
+import {PrismaService} from '@fullcycle/database';
+import {Injectable} from '@nestjs/common';
+import {CreateUserDto} from './dto/create-user.dto';
+import {UpdateUserDto} from './dto/update-user.dto';
 @Injectable()
 export class UserService {
-  constructor(private prisma: PrismaService) { }
+  constructor(private prisma: PrismaService) {}
   create(createUserDto: CreateUserDto) {
     console.log('createUserDto', createUserDto);
     return 'This user was created';

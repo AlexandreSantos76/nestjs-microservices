@@ -1,118 +1,5 @@
 {
   "nodes": {
-    "dashboard": {
-      "name": "dashboard",
-      "type": "app",
-      "data": {
-        "root": "apps/frontend/dashboard",
-        "targets": {
-          "build": {
-            "options": {
-              "cwd": "apps/frontend/dashboard",
-              "tty": false,
-              "command": "next build"
-            },
-            "dependsOn": [
-              "^build"
-            ],
-            "cache": true,
-            "inputs": [
-              "default",
-              "^default",
-              {
-                "externalDependencies": [
-                  "next"
-                ]
-              }
-            ],
-            "outputs": [
-              "{workspaceRoot}/apps/frontend/dashboard/.next",
-              "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
-            ],
-            "executor": "nx:run-commands",
-            "configurations": {},
-            "parallelism": true
-          },
-          "dev": {
-            "options": {
-              "cwd": "apps/frontend/dashboard",
-              "command": "next dev"
-            },
-            "executor": "nx:run-commands",
-            "configurations": {},
-            "parallelism": true
-          },
-          "start": {
-            "options": {
-              "cwd": "apps/frontend/dashboard",
-              "command": "next start"
-            },
-            "dependsOn": [
-              "build"
-            ],
-            "executor": "nx:run-commands",
-            "configurations": {},
-            "parallelism": true
-          },
-          "serve-static": {
-            "executor": "@nx/web:file-server",
-            "options": {
-              "buildTarget": "build",
-              "staticFilePath": "apps/frontend/dashboard/out",
-              "port": 3000,
-              "spa": false
-            },
-            "configurations": {},
-            "parallelism": true
-          },
-          "lint": {
-            "cache": true,
-            "options": {
-              "cwd": "apps/frontend/dashboard",
-              "command": "eslint ."
-            },
-            "inputs": [
-              "default",
-              "^default",
-              "{workspaceRoot}/eslint.config.cjs",
-              "{projectRoot}/eslint.config.cjs",
-              "{workspaceRoot}/tools/eslint-rules/**/*",
-              {
-                "externalDependencies": [
-                  "eslint"
-                ]
-              }
-            ],
-            "outputs": [
-              "{options.outputFile}"
-            ],
-            "metadata": {
-              "technologies": [
-                "eslint"
-              ],
-              "description": "Runs ESLint on project",
-              "help": {
-                "command": "pnpm exec eslint --help",
-                "example": {
-                  "options": {
-                    "max-warnings": 0
-                  }
-                }
-              }
-            },
-            "executor": "nx:run-commands",
-            "configurations": {},
-            "parallelism": true
-          }
-        },
-        "name": "dashboard",
-        "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "apps/frontend/dashboard",
-        "projectType": "application",
-        "tags": [],
-        "implicitDependencies": []
-      }
-    },
     "http-gateway": {
       "name": "http-gateway",
       "type": "lib",
@@ -384,6 +271,18 @@
             "configurations": {},
             "parallelism": true
           },
+          "clear": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "clear"
+            },
+            "metadata": {
+              "scriptContent": "rimraf dist && rimraf node_modules",
+              "runCommand": "pnpm run clear"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
           "start:debug": {
             "executor": "nx:run-script",
             "options": {
@@ -481,6 +380,7 @@
               "format",
               "start",
               "dev",
+              "clear",
               "start:debug",
               "start:prod",
               "lint",
@@ -544,9 +444,15 @@
             "parallelism": true
           },
           "test": {
+            "options": {
+              "cwd": "packages/database",
+              "env": {
+                "TS_NODE_COMPILER_OPTIONS": "{\"moduleResolution\":\"node10\"}"
+              },
+              "command": "jest"
+            },
             "metadata": {
               "technologies": [
-                "jest",
                 "jest"
               ],
               "description": "Run Jest Tests",
@@ -563,7 +469,6 @@
             "inputs": [
               "default",
               "^default",
-              "{workspaceRoot}/jest.preset.js",
               {
                 "externalDependencies": [
                   "jest"
@@ -571,57 +476,53 @@
               }
             ],
             "outputs": [
-              "{workspaceRoot}/coverage/packages/database"
+              "{projectRoot}/coverage"
             ],
             "executor": "nx:run-commands",
-            "options": {
-              "cwd": "packages/database",
-              "env": {
-                "TS_NODE_COMPILER_OPTIONS": "{\"moduleResolution\":\"node10\"}"
-              },
-              "command": "jest"
-            },
             "configurations": {},
             "parallelism": true
           },
           "build": {
-            "executor": "@nx/js:tsc",
-            "outputs": [
-              "{options.outputPath}"
-            ],
+            "executor": "nx:run-script",
             "options": {
-              "outputPath": "dist/packages/database",
-              "main": "packages/database/src/index.ts",
-              "tsConfig": "packages/database/tsconfig.lib.json",
-              "assets": [
-                "packages/database/*.md"
-              ]
+              "script": "build"
+            },
+            "metadata": {
+              "scriptContent": "nest build",
+              "runCommand": "pnpm run build"
             },
             "configurations": {},
-            "parallelism": true,
-            "cache": true,
-            "dependsOn": [
-              "^build"
-            ],
-            "inputs": [
-              "default",
-              "^default"
-            ]
+            "parallelism": true
+          },
+          "clear": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "clear"
+            },
+            "metadata": {
+              "scriptContent": "rimraf build && rimraf node_modules",
+              "runCommand": "pnpm run clear"
+            },
+            "configurations": {},
+            "parallelism": true
           }
         },
-        "sourceRoot": "packages/database/src",
+        "sourceRoot": "packages/database",
         "name": "@fullcycle/database",
         "tags": [
           "npm:private"
         ],
         "metadata": {
-          "targetGroups": {},
+          "targetGroups": {
+            "NPM Scripts": [
+              "build",
+              "clear"
+            ]
+          },
           "js": {
             "packageName": "@fullcycle/database"
           }
         },
-        "$schema": "../../node_modules/nx/schemas/project-schema.json",
-        "projectType": "library",
         "implicitDependencies": []
       }
     },
@@ -12589,6 +12490,15 @@
         "hash": "sha512-q1b3N5QkRUWUl7iyylaaj3kOpIT0N2i9MqIEQXP73GVsN9cw3fdx8X63cEmWhJGi2PPCF23Ijp7ktmd39rawIA=="
       }
     },
+    "npm:rimraf": {
+      "type": "npm",
+      "name": "npm:rimraf",
+      "data": {
+        "version": "6.0.1",
+        "packageName": "rimraf",
+        "hash": "sha512-9dkvaxAsk/xNXSJzMgFqqMCuFgt2+KsOFek3TMLfo8NCPfWpBmqwyNn5Y+NX56QUYfCtsyhF3ayiboEoUmJk/A=="
+      }
+    },
     "npm:rollup": {
       "type": "npm",
       "name": "npm:rollup",
@@ -13813,15 +13723,6 @@
         "hash": "sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ=="
       }
     },
-    "npm:tsc": {
-      "type": "npm",
-      "name": "npm:tsc",
-      "data": {
-        "version": "2.0.4",
-        "packageName": "tsc",
-        "hash": "sha512-fzoSieZI5KKJVBYGvwbVZs/J5za84f2lSTLPYf6AGiIf43tZ3GNrI1QzTLcjtyDDP4aLxd46RTZq1nQxe7+k5Q=="
-      }
-    },
     "npm:tsconfig-paths-webpack-plugin@4.0.0": {
       "type": "npm",
       "name": "npm:tsconfig-paths-webpack-plugin@4.0.0",
@@ -14697,38 +14598,6 @@
     }
   },
   "dependencies": {
-    "dashboard": [
-      {
-        "source": "dashboard",
-        "target": "npm:@eslint/eslintrc",
-        "type": "static"
-      },
-      {
-        "source": "dashboard",
-        "target": "npm:@eslint/js",
-        "type": "static"
-      },
-      {
-        "source": "dashboard",
-        "target": "npm:@eslint/compat",
-        "type": "static"
-      },
-      {
-        "source": "dashboard",
-        "target": "npm:@nx/eslint-plugin",
-        "type": "static"
-      },
-      {
-        "source": "dashboard",
-        "target": "npm:@nx/next",
-        "type": "static"
-      },
-      {
-        "source": "dashboard",
-        "target": "npm:@nx/react",
-        "type": "static"
-      }
-    ],
     "http-gateway": [
       {
         "source": "http-gateway",
@@ -14949,6 +14818,11 @@
       },
       {
         "source": "user-service",
+        "target": "npm:rimraf",
+        "type": "static"
+      },
+      {
+        "source": "user-service",
         "target": "npm:source-map-support@0.5.21",
         "type": "static"
       },
@@ -15061,12 +14935,102 @@
       },
       {
         "source": "@fullcycle/database",
-        "target": "npm:tsc",
+        "target": "npm:typescript",
         "type": "static"
       },
       {
         "source": "@fullcycle/database",
-        "target": "npm:typescript",
+        "target": "npm:@nestjs/cli",
+        "type": "static"
+      },
+      {
+        "source": "@fullcycle/database",
+        "target": "npm:@nestjs/schematics",
+        "type": "static"
+      },
+      {
+        "source": "@fullcycle/database",
+        "target": "npm:@nestjs/testing",
+        "type": "static"
+      },
+      {
+        "source": "@fullcycle/database",
+        "target": "npm:@types/express@5.0.0",
+        "type": "static"
+      },
+      {
+        "source": "@fullcycle/database",
+        "target": "npm:@types/jest",
+        "type": "static"
+      },
+      {
+        "source": "@fullcycle/database",
+        "target": "npm:@types/node",
+        "type": "static"
+      },
+      {
+        "source": "@fullcycle/database",
+        "target": "npm:@types/supertest",
+        "type": "static"
+      },
+      {
+        "source": "@fullcycle/database",
+        "target": "npm:@typescript-eslint/eslint-plugin",
+        "type": "static"
+      },
+      {
+        "source": "@fullcycle/database",
+        "target": "npm:@typescript-eslint/parser",
+        "type": "static"
+      },
+      {
+        "source": "@fullcycle/database",
+        "target": "npm:eslint",
+        "type": "static"
+      },
+      {
+        "source": "@fullcycle/database",
+        "target": "npm:eslint-config-prettier",
+        "type": "static"
+      },
+      {
+        "source": "@fullcycle/database",
+        "target": "npm:eslint-plugin-prettier",
+        "type": "static"
+      },
+      {
+        "source": "@fullcycle/database",
+        "target": "npm:jest",
+        "type": "static"
+      },
+      {
+        "source": "@fullcycle/database",
+        "target": "npm:prettier",
+        "type": "static"
+      },
+      {
+        "source": "@fullcycle/database",
+        "target": "npm:source-map-support@0.5.21",
+        "type": "static"
+      },
+      {
+        "source": "@fullcycle/database",
+        "target": "npm:supertest",
+        "type": "static"
+      },
+      {
+        "source": "@fullcycle/database",
+        "target": "npm:ts-jest",
+        "type": "static"
+      },
+      {
+        "source": "@fullcycle/database",
+        "target": "npm:ts-loader",
+        "type": "static"
+      },
+      {
+        "source": "@fullcycle/database",
+        "target": "npm:tsconfig-paths@4.2.0",
         "type": "static"
       },
       {
@@ -22067,7 +22031,7 @@
     "npm:@types/serve-index": [
       {
         "source": "npm:@types/serve-index",
-        "target": "npm:@types/express@4.17.21",
+        "target": "npm:@types/express@5.0.0",
         "type": "static"
       }
     ],
@@ -32161,6 +32125,18 @@
       {
         "source": "npm:restore-cursor",
         "target": "npm:signal-exit@3.0.7",
+        "type": "static"
+      }
+    ],
+    "npm:rimraf": [
+      {
+        "source": "npm:rimraf",
+        "target": "npm:glob@11.0.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:rimraf",
+        "target": "npm:package-json-from-dist",
         "type": "static"
       }
     ],

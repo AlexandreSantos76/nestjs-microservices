@@ -1,11 +1,7 @@
 {
   "version": "6.0",
   "nxVersion": "20.3.2",
-  "pathMappings": {
-    "database": [
-      "packages/database/src/index.ts"
-    ]
-  },
+  "pathMappings": {},
   "nxJsonPlugins": [
     {
       "name": "@nx/next/plugin",
@@ -46,16 +42,68 @@
   "fileMap": {
     "nonProjectFiles": [
       {
+        "file": ".vscode/extensions.json",
+        "hash": "8687620036886048703"
+      },
+      {
+        "file": "docker-compose.yml",
+        "hash": "11560426567020222688"
+      },
+      {
+        "file": "Dockerfile",
+        "hash": "4437956231260714882"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "4611908379959667740"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "513348486832885260"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "13136815857996273028"
+      },
+      {
         "file": ".devcontainer/devcontainer.json",
         "hash": "14964461671401571764"
+      },
+      {
+        "file": "docker-utils/docker-entrypoint.sh",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "nx.json",
+        "hash": "2061272926857600407"
+      },
+      {
+        "file": "package.json",
+        "hash": "7506122883658102972"
+      },
+      {
+        "file": "eslint.config.cjs",
+        "hash": "4219588132382477313"
       },
       {
         "file": ".devcontainer/docker-compose.yml",
         "hash": "10232984747896353425"
       },
       {
+        "file": "docker-compose.override.yml",
+        "hash": "3244421341483603138"
+      },
+      {
         "file": ".dockerignore",
         "hash": "3244421341483603138"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
       },
       {
         "file": ".gitignore",
@@ -66,160 +114,293 @@
         "hash": "14688272390704683536"
       },
       {
-        "file": ".prettierrc",
-        "hash": "16267754514737964994"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "8687620036886048703"
-      },
-      {
-        "file": ".vscode/settings.json",
-        "hash": "8095428913548485559"
-      },
-      {
-        "file": "Dockerfile",
-        "hash": "4437956231260714882"
-      },
-      {
-        "file": "docker-compose.override.yml",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "docker-compose.yml",
-        "hash": "11560426567020222688"
-      },
-      {
-        "file": "docker-utils/docker-entrypoint.sh",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "eslint.config.cjs",
-        "hash": "4219588132382477313"
-      },
-      {
         "file": "jest.config.ts",
         "hash": "3494843969422251966"
-      },
-      {
-        "file": "jest.preset.js",
-        "hash": "9430166341120122740"
-      },
-      {
-        "file": "nx.json",
-        "hash": "2061272926857600407"
-      },
-      {
-        "file": "package.json",
-        "hash": "8767109379964223115"
-      },
-      {
-        "file": "pnpm-lock.yaml",
-        "hash": "4287296233739603743"
-      },
-      {
-        "file": "pnpm-workspace.yaml",
-        "hash": "513348486832885260"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "13117931886094677531"
       }
     ],
     "projectFileMap": {
-      "@fullcycle/database": [
+      "user-service": [
         {
-          "file": "packages/database/.gitignore",
+          "file": "apps/api/user-service/.eslintrc.js",
+          "hash": "7461846271827386206"
+        },
+        {
+          "file": "apps/api/user-service/.gitignore",
           "hash": "12975187279384539528"
         },
         {
-          "file": "packages/database/README.md",
-          "hash": "9759918918454671098"
+          "file": "apps/api/user-service/.prettierrc",
+          "hash": "4808572120966128913"
         },
         {
-          "file": "packages/database/jest.config.d.ts",
-          "hash": "5947004654483438796"
+          "file": "apps/api/user-service/Dockerfile",
+          "hash": "13317812064709622534"
         },
         {
-          "file": "packages/database/jest.config.js",
-          "hash": "3158654238240681692"
+          "file": "apps/api/user-service/README.md",
+          "hash": "17910034448946616894"
         },
         {
-          "file": "packages/database/jest.config.ts",
-          "hash": "17076831372021062196"
+          "file": "apps/api/user-service/nest-cli.json",
+          "hash": "789240945379598733"
         },
         {
-          "file": "packages/database/package.json",
-          "hash": "9111339488025604227",
+          "file": "apps/api/user-service/package.json",
+          "hash": "9051368175973368429",
           "deps": [
+            "npm:@nestjs/cli",
+            "npm:@nestjs/schematics",
+            "npm:@nestjs/testing",
+            "npm:@types/express@5.0.0",
+            "npm:@types/jest",
+            "npm:@types/node",
+            "npm:@types/supertest",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-prettier",
+            "npm:jest",
+            "npm:prettier",
+            "npm:rimraf",
+            "npm:source-map-support@0.5.21",
+            "npm:supertest",
+            "npm:ts-jest",
+            "npm:ts-loader",
+            "npm:ts-node",
+            "npm:tsconfig-paths@4.2.0",
+            "npm:typescript",
+            "@fullcycle/database",
+            "npm:@nestjs/class-transformer",
+            "npm:@nestjs/class-validator",
             "npm:@nestjs/common",
             "npm:@nestjs/core",
-            "npm:prisma",
+            "npm:@nestjs/mapped-types",
+            "npm:@nestjs/microservices",
+            "npm:@nestjs/platform-express",
             "npm:reflect-metadata",
-            "npm:ts-node",
-            "npm:tsc",
-            "npm:typescript",
-            "npm:@prisma/client",
-            "npm:tslib"
+            "npm:rxjs"
           ]
         },
         {
-          "file": "packages/database/prisma/migrations/20250120184146_/migration.sql",
-          "hash": "2593754806825655440"
+          "file": "apps/api/user-service/src/app.controller.spec.ts",
+          "hash": "1918822888091513166",
+          "deps": [
+            "npm:@nestjs/microservices",
+            "npm:@nestjs/testing"
+          ]
         },
         {
-          "file": "packages/database/prisma/migrations/20250122135041_create_users_roles/migration.sql",
-          "hash": "15766404567931065405"
+          "file": "apps/api/user-service/src/app.controller.ts",
+          "hash": "14995001431212648279",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/microservices"
+          ]
         },
         {
-          "file": "packages/database/prisma/migrations/20250122135657_relation_users_roles/migration.sql",
-          "hash": "12800399248391705321"
-        },
-        {
-          "file": "packages/database/prisma/migrations/20250122141419_/migration.sql",
-          "hash": "13762629344257296474"
-        },
-        {
-          "file": "packages/database/prisma/migrations/migration_lock.toml",
-          "hash": "17579406468909820784"
-        },
-        {
-          "file": "packages/database/prisma/schema.prisma",
-          "hash": "6500657690474758168"
-        },
-        {
-          "file": "packages/database/project.json",
-          "hash": "12625404151704294806"
-        },
-        {
-          "file": "packages/database/src/index.ts",
-          "hash": "15759255414421101574"
-        },
-        {
-          "file": "packages/database/src/lib/database.module.ts",
-          "hash": "3818643777145942878",
+          "file": "apps/api/user-service/src/app.module.ts",
+          "hash": "3665787318501217838",
           "deps": [
             "npm:@nestjs/common"
           ]
         },
         {
-          "file": "packages/database/src/lib/prisma.service.ts",
-          "hash": "11975651640247132032",
+          "file": "apps/api/user-service/src/app.service.ts",
+          "hash": "16892833931858030153",
           "deps": [
-            "npm:@nestjs/common",
-            "npm:@prisma/client"
+            "npm:@nestjs/common"
           ]
         },
         {
-          "file": "packages/database/src/tsconfig.build.json",
+          "file": "apps/api/user-service/src/main.ts",
+          "hash": "4487234616512731075",
+          "deps": [
+            "npm:@nestjs/core",
+            "npm:@nestjs/microservices"
+          ]
+        },
+        {
+          "file": "apps/api/user-service/src/user/dto/create-user.dto.ts",
+          "hash": "16685739163258135716",
+          "deps": [
+            "npm:@nestjs/class-validator"
+          ]
+        },
+        {
+          "file": "apps/api/user-service/src/user/dto/update-user.dto.ts",
+          "hash": "6927607811509875871",
+          "deps": [
+            "npm:@nestjs/mapped-types",
+            "npm:@nestjs/class-validator"
+          ]
+        },
+        {
+          "file": "apps/api/user-service/src/user/entities/User.ts",
+          "hash": "17141894827060802333"
+        },
+        {
+          "file": "apps/api/user-service/src/user/mappers/PrismaUserMapper.ts",
+          "hash": "8045562930218412075",
+          "deps": [
+            "@fullcycle/database"
+          ]
+        },
+        {
+          "file": "apps/api/user-service/src/user/repository/database.repositoy.ts",
+          "hash": "9975841323100898685"
+        },
+        {
+          "file": "apps/api/user-service/src/user/repository/prisma.user.repository.ts",
+          "hash": "12663875013579064479",
+          "deps": [
+            "@fullcycle/database"
+          ]
+        },
+        {
+          "file": "apps/api/user-service/src/user/repository/user.repository.ts",
+          "hash": "427779652311398336"
+        },
+        {
+          "file": "apps/api/user-service/src/user/repository/user.reposytory.memory.ts",
+          "hash": "5082315148011874635"
+        },
+        {
+          "file": "apps/api/user-service/src/user/useCases/createUserUseCase.spec.ts",
+          "hash": "11942056252222665656"
+        },
+        {
+          "file": "apps/api/user-service/src/user/useCases/createUserUseCase.ts",
+          "hash": "8766072614121638604",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/user-service/src/user/user.controller.ts",
+          "hash": "15007876974721636807",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/microservices"
+          ]
+        },
+        {
+          "file": "apps/api/user-service/src/user/user.module.ts",
+          "hash": "10934779446783359708",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/user-service/src/user/user.service.ts",
+          "hash": "7058645581475546749",
+          "deps": [
+            "@fullcycle/database",
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/user-service/test/app.e2e-spec.ts",
+          "hash": "2009771664009665678",
+          "deps": [
+            "npm:@nestjs/microservices",
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "apps/api/user-service/test/jest-e2e.json",
+          "hash": "7570273541430074424"
+        },
+        {
+          "file": "apps/api/user-service/tsconfig.build.json",
           "hash": "276845246908739715"
         },
         {
-          "file": "packages/database/tsconfig.build.json",
-          "hash": "3826382668696433746"
+          "file": "apps/api/user-service/tsconfig.json",
+          "hash": "1876265833229380624"
+        }
+      ],
+      "@fullcycle/config": [
+        {
+          "file": "packages/config/.eslintrc.js",
+          "hash": "7461846271827386206"
         },
         {
-          "file": "packages/database/tsconfig.json",
+          "file": "packages/config/.prettierrc",
+          "hash": "4808572120966128913"
+        },
+        {
+          "file": "packages/config/nest-cli.json",
+          "hash": "789240945379598733"
+        },
+        {
+          "file": "packages/config/package.json",
+          "hash": "876512588961164949",
+          "deps": [
+            "npm:@nestjs/cli",
+            "npm:@nestjs/schematics",
+            "npm:@nestjs/testing",
+            "npm:@types/express@5.0.0",
+            "npm:@types/jest",
+            "npm:@types/node",
+            "npm:@types/supertest",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-prettier",
+            "npm:jest",
+            "npm:prettier",
+            "npm:source-map-support@0.5.21",
+            "npm:supertest",
+            "npm:ts-jest",
+            "npm:ts-loader",
+            "npm:ts-node",
+            "npm:tsconfig-paths@4.2.0",
+            "npm:typescript",
+            "npm:@nestjs/common",
+            "npm:@nestjs/core",
+            "npm:@nestjs/platform-express",
+            "npm:reflect-metadata",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "packages/config/src/config.default.ts",
+          "hash": "11066125936728823599",
+          "deps": [
+            "npm:@nestjs/microservices"
+          ]
+        },
+        {
+          "file": "packages/config/src/config.interface.ts",
+          "hash": "7660606810176829135"
+        },
+        {
+          "file": "packages/config/src/config.module.ts",
+          "hash": "12193318288705638762",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "packages/config/src/config.service.ts",
+          "hash": "11208104901105384837",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/microservices"
+          ]
+        },
+        {
+          "file": "packages/config/src/index.ts",
+          "hash": "16349355166168840801"
+        },
+        {
+          "file": "packages/config/tsconfig.build.json",
+          "hash": "276845246908739715"
+        },
+        {
+          "file": "packages/config/tsconfig.json",
           "hash": "18137354487275673348"
         }
       ],
@@ -309,12 +490,21 @@
           ]
         },
         {
+          "file": "apps/api/http-gateway/src/user-tcp.controller.spec.ts",
+          "hash": "198989371111152215",
+          "deps": [
+            "npm:@nestjs/microservices",
+            "npm:@nestjs/testing",
+            "npm:rxjs"
+          ]
+        },
+        {
           "file": "apps/api/http-gateway/src/user-tcp.controller.ts",
-          "hash": "14760316045157488620",
+          "hash": "2596054475695698097",
           "deps": [
             "npm:@nestjs/common",
-            "npm:@nestjs/swagger",
-            "npm:@nestjs/microservices"
+            "npm:@nestjs/microservices",
+            "npm:@nestjs/swagger"
           ]
         },
         {
@@ -336,228 +526,6 @@
         },
         {
           "file": "apps/api/http-gateway/tsconfig.json",
-          "hash": "1876265833229380624"
-        }
-      ],
-      "dashboard": [
-        {
-          "file": "apps/frontend/dashboard/eslint.config.cjs",
-          "hash": "9975259870608951092",
-          "deps": [
-            "npm:@eslint/eslintrc",
-            "npm:@eslint/js",
-            "npm:@eslint/compat",
-            "npm:@nx/eslint-plugin"
-          ]
-        },
-        {
-          "file": "apps/frontend/dashboard/index.d.ts",
-          "hash": "5498222895072842432"
-        },
-        {
-          "file": "apps/frontend/dashboard/next-env.d.ts",
-          "hash": "1320675027584673186"
-        },
-        {
-          "file": "apps/frontend/dashboard/next.config.js",
-          "hash": "17252635002163063865",
-          "deps": [
-            "npm:@nx/next"
-          ]
-        },
-        {
-          "file": "apps/frontend/dashboard/postcss.config.js",
-          "hash": "2759402739052110475"
-        },
-        {
-          "file": "apps/frontend/dashboard/project.json",
-          "hash": "15172330846784705656"
-        },
-        {
-          "file": "apps/frontend/dashboard/public/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/frontend/dashboard/public/favicon.ico",
-          "hash": "9303420814833116677"
-        },
-        {
-          "file": "apps/frontend/dashboard/src/app/api/hello/route.ts",
-          "hash": "495073956729887886"
-        },
-        {
-          "file": "apps/frontend/dashboard/src/app/global.css",
-          "hash": "291024361394925992"
-        },
-        {
-          "file": "apps/frontend/dashboard/src/app/layout.tsx",
-          "hash": "7449088133155627856"
-        },
-        {
-          "file": "apps/frontend/dashboard/src/app/page.tsx",
-          "hash": "14414527987928215125"
-        },
-        {
-          "file": "apps/frontend/dashboard/tailwind.config.js",
-          "hash": "13090734457927965885",
-          "deps": [
-            "npm:@nx/react"
-          ]
-        },
-        {
-          "file": "apps/frontend/dashboard/tsconfig.json",
-          "hash": "11290865472168779304"
-        }
-      ],
-      "user-service": [
-        {
-          "file": "apps/api/user-service/.eslintrc.js",
-          "hash": "7461846271827386206"
-        },
-        {
-          "file": "apps/api/user-service/.prettierrc",
-          "hash": "4808572120966128913"
-        },
-        {
-          "file": "apps/api/user-service/Dockerfile",
-          "hash": "13317812064709622534"
-        },
-        {
-          "file": "apps/api/user-service/README.md",
-          "hash": "17910034448946616894"
-        },
-        {
-          "file": "apps/api/user-service/nest-cli.json",
-          "hash": "789240945379598733"
-        },
-        {
-          "file": "apps/api/user-service/package.json",
-          "hash": "11835112751957392050",
-          "deps": [
-            "npm:@nestjs/cli",
-            "npm:@nestjs/schematics",
-            "npm:@nestjs/testing",
-            "npm:@types/express@5.0.0",
-            "npm:@types/jest",
-            "npm:@types/node",
-            "npm:@types/supertest",
-            "npm:@typescript-eslint/eslint-plugin",
-            "npm:@typescript-eslint/parser",
-            "npm:eslint",
-            "npm:eslint-config-prettier",
-            "npm:eslint-plugin-prettier",
-            "npm:jest",
-            "npm:prettier",
-            "npm:source-map-support@0.5.21",
-            "npm:supertest",
-            "npm:ts-jest",
-            "npm:ts-loader",
-            "npm:ts-node",
-            "npm:tsconfig-paths@4.2.0",
-            "npm:typescript",
-            "@fullcycle/database",
-            "npm:@nestjs/class-transformer",
-            "npm:@nestjs/class-validator",
-            "npm:@nestjs/common",
-            "npm:@nestjs/core",
-            "npm:@nestjs/mapped-types",
-            "npm:@nestjs/microservices",
-            "npm:@nestjs/platform-express",
-            "npm:reflect-metadata",
-            "npm:rxjs"
-          ]
-        },
-        {
-          "file": "apps/api/user-service/src/app.controller.ts",
-          "hash": "1806486023944091543",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/microservices"
-          ]
-        },
-        {
-          "file": "apps/api/user-service/src/app.module.ts",
-          "hash": "3423434090417108343",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/api/user-service/src/app.service.ts",
-          "hash": "16892833931858030153",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/api/user-service/src/main.ts",
-          "hash": "4487234616512731075",
-          "deps": [
-            "npm:@nestjs/core",
-            "npm:@nestjs/microservices"
-          ]
-        },
-        {
-          "file": "apps/api/user-service/src/user/dto/create-user.dto.ts",
-          "hash": "16685739163258135716",
-          "deps": [
-            "npm:@nestjs/class-validator"
-          ]
-        },
-        {
-          "file": "apps/api/user-service/src/user/dto/update-user.dto.ts",
-          "hash": "6927607811509875871",
-          "deps": [
-            "npm:@nestjs/mapped-types",
-            "npm:@nestjs/class-validator"
-          ]
-        },
-        {
-          "file": "apps/api/user-service/src/user/entities/user.entity.ts",
-          "hash": "7137720142910469550"
-        },
-        {
-          "file": "apps/api/user-service/src/user/user.controller.ts",
-          "hash": "14901301219945482352",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/microservices"
-          ]
-        },
-        {
-          "file": "apps/api/user-service/src/user/user.module.ts",
-          "hash": "7518999540161791015",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/api/user-service/src/user/user.service.ts",
-          "hash": "15884272599150142392",
-          "deps": [
-            "npm:@nestjs/common",
-            "@fullcycle/database"
-          ]
-        },
-        {
-          "file": "apps/api/user-service/test/app.e2e-spec.ts",
-          "hash": "15142680097789702029",
-          "deps": [
-            "npm:@nestjs/testing",
-            "npm:@nestjs/common",
-            "npm:supertest"
-          ]
-        },
-        {
-          "file": "apps/api/user-service/test/jest-e2e.json",
-          "hash": "7570273541430074424"
-        },
-        {
-          "file": "apps/api/user-service/tsconfig.build.json",
-          "hash": "276845246908739715"
-        },
-        {
-          "file": "apps/api/user-service/tsconfig.json",
           "hash": "1876265833229380624"
         }
       ],
@@ -661,23 +629,25 @@
           "hash": "18137354487275673348"
         }
       ],
-      "@fullcycle/config": [
+      "@fullcycle/database": [
         {
-          "file": "packages/config/.eslintrc.js",
-          "hash": "7461846271827386206"
+          "file": "packages/database/README.md",
+          "hash": "9759918918454671098"
         },
         {
-          "file": "packages/config/.prettierrc",
-          "hash": "4808572120966128913"
+          "file": "packages/database/jest.config.ts",
+          "hash": "3244421341483603138"
         },
         {
-          "file": "packages/config/nest-cli.json",
-          "hash": "789240945379598733"
-        },
-        {
-          "file": "packages/config/package.json",
-          "hash": "876512588961164949",
+          "file": "packages/database/package.json",
+          "hash": "2254133246093697819",
           "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/core",
+            "npm:prisma",
+            "npm:reflect-metadata",
+            "npm:ts-node",
+            "npm:typescript",
             "npm:@nestjs/cli",
             "npm:@nestjs/schematics",
             "npm:@nestjs/testing",
@@ -696,53 +666,61 @@
             "npm:supertest",
             "npm:ts-jest",
             "npm:ts-loader",
-            "npm:ts-node",
             "npm:tsconfig-paths@4.2.0",
-            "npm:typescript",
-            "npm:@nestjs/common",
-            "npm:@nestjs/core",
-            "npm:@nestjs/platform-express",
-            "npm:reflect-metadata",
-            "npm:rxjs"
+            "npm:@prisma/client",
+            "npm:tslib"
           ]
         },
         {
-          "file": "packages/config/src/config.default.ts",
-          "hash": "11066125936728823599",
-          "deps": [
-            "npm:@nestjs/microservices"
-          ]
+          "file": "packages/database/prisma/migrations/20250120184146_/migration.sql",
+          "hash": "2593754806825655440"
         },
         {
-          "file": "packages/config/src/config.interface.ts",
-          "hash": "7660606810176829135"
+          "file": "packages/database/prisma/migrations/20250122135041_create_users_roles/migration.sql",
+          "hash": "15766404567931065405"
         },
         {
-          "file": "packages/config/src/config.module.ts",
-          "hash": "12193318288705638762",
+          "file": "packages/database/prisma/migrations/20250122135657_relation_users_roles/migration.sql",
+          "hash": "12800399248391705321"
+        },
+        {
+          "file": "packages/database/prisma/migrations/20250122141419_/migration.sql",
+          "hash": "13762629344257296474"
+        },
+        {
+          "file": "packages/database/prisma/migrations/migration_lock.toml",
+          "hash": "17579406468909820784"
+        },
+        {
+          "file": "packages/database/prisma/schema.prisma",
+          "hash": "12691722777978597984"
+        },
+        {
+          "file": "packages/database/src/index.ts",
+          "hash": "11736092245813092667"
+        },
+        {
+          "file": "packages/database/src/lib/database.module.ts",
+          "hash": "10892289757874971887",
           "deps": [
             "npm:@nestjs/common"
           ]
         },
         {
-          "file": "packages/config/src/config.service.ts",
-          "hash": "11208104901105384837",
+          "file": "packages/database/src/lib/prisma.service.ts",
+          "hash": "2761939402197932524",
           "deps": [
             "npm:@nestjs/common",
-            "npm:@nestjs/microservices"
+            "npm:@prisma/client"
           ]
         },
         {
-          "file": "packages/config/src/index.ts",
-          "hash": "16349355166168840801"
+          "file": "packages/database/tsconfig.build.json",
+          "hash": "3826382668696433746"
         },
         {
-          "file": "packages/config/tsconfig.build.json",
-          "hash": "276845246908739715"
-        },
-        {
-          "file": "packages/config/tsconfig.json",
-          "hash": "18137354487275673348"
+          "file": "packages/database/tsconfig.json",
+          "hash": "7364799718510680637"
         }
       ]
     }

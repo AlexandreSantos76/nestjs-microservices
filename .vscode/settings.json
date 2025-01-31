@@ -44,5 +44,7 @@
   // xml
   "xml.format.enabled": false,
   // css
-  "css.lint.unknownAtRules": "ignore"
+  "css.lint.unknownAtRules": "ignore",
+  "npm-scripts.showStartNotification": false,
+  "postman.settings.dotenv-detection-notification-visibility": false
 }

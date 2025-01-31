@@ -1,0 +1,35 @@
+
+> http-gateway@0.0.1 test /home/xande/jobs/full-cycle/nestjs-microservices/apps/api/http-gateway
+> jest
+
+[1m[2mDetermining test suites to run...[22m[22m[999D[K
+[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/[22m[1muser-tcp.controller.spec.ts[22m
+[K[1A[K[1A[999D[K
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/[22m[1muser-tcp.controller.spec.ts[22m
+[K[1A[K[1A  [2mconsole.log[22m
+    Received response: { message: 'Hello response' }
+[2m[22m
+[2m      [2mat Object.next ([22m[2muser-tcp.controller.spec.ts[2m:30:15)[22m[2m[22m
+
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/[22m[1muser-tcp.controller.spec.ts[22m
+[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/[22m[1muser-tcp.controller.spec.ts[22m
+[K[1A[K[1A[0m[7m[1m[32m PASS [39m[22m[27m[0m [2msrc/[22m[1muser-tcp.controller.spec.ts[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/[22m[1muser-tcp.controller.spec.ts[22m
+[K[1A[K[1A  UserTcpController
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/[22m[1muser-tcp.controller.spec.ts[22m
+[K[1A[K[1A    [32m✓[39m [2mshould send {name: "teste hello"} to USER_SERVICE and receive a response (39 ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/[22m[1muser-tcp.controller.spec.ts[22m
+[K[1A[K[1A
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/[22m[1muser-tcp.controller.spec.ts[22m
+[K[1A[K[1A[999D[K[1mTest Suites: [22m[1m[32m1 passed[39m[22m, 1 total
+[1mTests:       [22m[1m[32m1 passed[39m[22m, 1 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        2.529 s, estimated 3 s
+[2mRan all test suites[22m[2m.[22m
