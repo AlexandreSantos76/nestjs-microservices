@@ -1,7 +1,10 @@
 
-import { NestFactory } from '@nestjs/core';
-import { Transport, MicroserviceOptions } from '@nestjs/microservices';
-import { AppModule } from './app.module';
+import {ErrorHandlerService, RpcExceptionFilter} from '@fullcycle/common';
+import {ValidationPipe} from '@nestjs/common';
+import {NestFactory} from '@nestjs/core';
+import {MicroserviceOptions, Transport} from '@nestjs/microservices';
+import 'tsconfig-paths/register';
+import {AppModule} from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.createMicroservice<MicroserviceOptions>(
@@ -13,6 +16,18 @@ async function bootstrap() {
       }
     },
   );
+  const errorHandler = app.get(ErrorHandlerService);
+  app.useGlobalPipes(new ValidationPipe(
+    {
+      transform: true,
+      whitelist: false,
+      forbidNonWhitelisted: true,
+      forbidUnknownValues: true,
+      disableErrorMessages: true,
+      exceptionFactory: (errors) => errorHandler.handleValidationError(errors),
+    }
+  ));
+  app.useGlobalFilters(new RpcExceptionFilter());
   await app.listen();
 }
 bootstrap();

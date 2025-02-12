@@ -1,0 +1,192 @@
+[1G[0K⠙[1G[0K
+> user-service@0.0.1 test
+> jest
+
+[1G[0K⠙[1G[0K[1m[2mDetermining test suites to run...[22m[22m[999D[K
+
+[1mTest Suites: [22m0 of 3 total
+[1mTests:       [22m0 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        0 s[K[1A[K[1A[K[1A[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/user/[22m[1muser.controller.spec.ts[22m
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/[22m[1mapp.controller.spec.ts[22m
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/user/useCases/[22m[1mcreateUserUseCase.spec.ts[22m
+
+[1mTest Suites: [22m0 of 3 total
+[1mTests:       [22m0 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        0 s[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/user/[22m[1muser.controller.spec.ts[22m
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/[22m[1mapp.controller.spec.ts[22m
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/user/useCases/[22m[1mcreateUserUseCase.spec.ts[22m
+
+[1mTest Suites: [22m0 of 3 total
+[1mTests:       [22m0 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        1 s[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/user/[22m[1muser.controller.spec.ts[22m
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/[22m[1mapp.controller.spec.ts[22m
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/user/useCases/[22m[1mcreateUserUseCase.spec.ts[22m
+
+[1mTest Suites: [22m0 of 3 total
+[1mTests:       [22m0 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        2 s[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A[0m[7m[1m[32m PASS [39m[22m[27m[0m [2msrc/user/useCases/[22m[1mcreateUserUseCase.spec.ts[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/user/[22m[1muser.controller.spec.ts[22m
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/[22m[1mapp.controller.spec.ts[22m
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/user/useCases/[22m[1mcreateUserUseCase.spec.ts[22m
+
+[1mTest Suites: [22m0 of 3 total
+[1mTests:       [22m0 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        2 s[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A  [1m● [22mConsole
+
+    [2mconsole.log[22m
+      User <John Doe> created in memory
+[2m[22m
+[2m      [2mat UserRepositoryInMemory.create ([22m[2muser/repository/user.reposytory.memory.ts[2m:9:13)[22m[2m[22m
+
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/user/[22m[1muser.controller.spec.ts[22m
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/[22m[1mapp.controller.spec.ts[22m
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/user/useCases/[22m[1mcreateUserUseCase.spec.ts[22m
+
+[1mTest Suites: [22m0 of 3 total
+[1mTests:       [22m0 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        2 s[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/user/[22m[1muser.controller.spec.ts[22m
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/[22m[1mapp.controller.spec.ts[22m
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/user/useCases/[22m[1mcreateUserUseCase.spec.ts[22m
+
+[1mTest Suites: [22m0 of 3 total
+[1mTests:       [22m0 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        2 s[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/user/[22m[1muser.controller.spec.ts[22m
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/[22m[1mapp.controller.spec.ts[22m
+
+[1mTest Suites: [22m[1m[32m1 passed[39m[22m, 1 of 3 total
+[1mTests:       [22m[1m[32m1 passed[39m[22m, 1 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        2 s[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A[0m[7m[1m[32m PASS [39m[22m[27m[0m [2msrc/[22m[1mapp.controller.spec.ts[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/user/[22m[1muser.controller.spec.ts[22m
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/[22m[1mapp.controller.spec.ts[22m
+
+[1mTest Suites: [22m[1m[32m1 passed[39m[22m, 1 of 3 total
+[1mTests:       [22m[1m[32m1 passed[39m[22m, 1 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        2 s[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A  [1m● [22mConsole
+
+    [2mconsole.log[22m
+      Receiveda data: { name: 'test' }
+[2m[22m
+[2m      [2mat AppController.getHello ([22m[2mapp.controller.ts[2m:9:15)[22m[2m[22m
+
+    [2mconsole.log[22m
+      hello world - user-service test
+[2m[22m
+[2m      [2mat AppController.getHello ([22m[2mapp.controller.ts[2m:16:15)[22m[2m[22m
+
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/user/[22m[1muser.controller.spec.ts[22m
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/[22m[1mapp.controller.spec.ts[22m
+
+[1mTest Suites: [22m[1m[32m1 passed[39m[22m, 1 of 3 total
+[1mTests:       [22m[1m[32m1 passed[39m[22m, 1 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        2 s[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/user/[22m[1muser.controller.spec.ts[22m
+
+[1mTest Suites: [22m[1m[32m2 passed[39m[22m, 2 of 3 total
+[1mTests:       [22m[1m[32m2 passed[39m[22m, 2 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        2 s[K[1A[K[1A[K[1A[K[1A[K[1A[K[1Ats-jest[ts-jest-transformer] (WARN) Got a `.js` file to compile while `allowJs` option is not set to `true` (file: /home/xande/jobs/full-cycle/nestjs-microservices/packages/database/build/src/index.js). To fix this:
+  - if you want TypeScript to process JS files, set `allowJs` to `true` in your TypeScript config (usually tsconfig.json)
+  - if you do not want TypeScript to process your `.js` files, in your Jest config change the `transform` key which value is `ts-jest` so that it does not match `.js` files anymore
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/user/[22m[1muser.controller.spec.ts[22m
+
+[1mTest Suites: [22m[1m[32m2 passed[39m[22m, 2 of 3 total
+[1mTests:       [22m[1m[32m2 passed[39m[22m, 2 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        2 s[K[1A[K[1A[K[1A[K[1A[K[1A[K[1Ats-jest[ts-jest-transformer] (WARN) Got a `.js` file to compile while `allowJs` option is not set to `true` (file: /home/xande/jobs/full-cycle/nestjs-microservices/packages/database/build/src/lib/database.module.js). To fix this:
+  - if you want TypeScript to process JS files, set `allowJs` to `true` in your TypeScript config (usually tsconfig.json)
+  - if you do not want TypeScript to process your `.js` files, in your Jest config change the `transform` key which value is `ts-jest` so that it does not match `.js` files anymore
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/user/[22m[1muser.controller.spec.ts[22m
+
+[1mTest Suites: [22m[1m[32m2 passed[39m[22m, 2 of 3 total
+[1mTests:       [22m[1m[32m2 passed[39m[22m, 2 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        2 s[K[1A[K[1A[K[1A[K[1A[K[1A[K[1Ats-jest[ts-jest-transformer] (WARN) Got a `.js` file to compile while `allowJs` option is not set to `true` (file: /home/xande/jobs/full-cycle/nestjs-microservices/packages/database/build/src/lib/prisma.service.js). To fix this:
+  - if you want TypeScript to process JS files, set `allowJs` to `true` in your TypeScript config (usually tsconfig.json)
+  - if you do not want TypeScript to process your `.js` files, in your Jest config change the `transform` key which value is `ts-jest` so that it does not match `.js` files anymore
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/user/[22m[1muser.controller.spec.ts[22m
+
+[1mTest Suites: [22m[1m[32m2 passed[39m[22m, 2 of 3 total
+[1mTests:       [22m[1m[32m2 passed[39m[22m, 2 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        2 s[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A[0m[7m[1m[31m FAIL [39m[22m[27m[0m [2msrc/user/[22m[1muser.controller.spec.ts[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/user/[22m[1muser.controller.spec.ts[22m
+
+[1mTest Suites: [22m[1m[32m2 passed[39m[22m, 2 of 3 total
+[1mTests:       [22m[1m[32m2 passed[39m[22m, 2 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        2 s[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A  [1m● [22mConsole
+
+    [2mconsole.log[22m
+      Received daata: {
+        email: 'test@example.com',
+        password: 'password',
+        name: 'Test User',
+        isActive: true
+      }
+[2m[22m
+[2m      [2mat UserController.create ([22m[2muser/user.controller.ts[2m:13:13)[22m[2m[22m
+
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/user/[22m[1muser.controller.spec.ts[22m
+
+[1mTest Suites: [22m[1m[32m2 passed[39m[22m, 2 of 3 total
+[1mTests:       [22m[1m[32m2 passed[39m[22m, 2 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        2 s[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A[1m[31m  [1m● [22m[1mUserController › create › should create a user[39m[22m
+
+    [2mexpect([22m[31mjest.fn()[39m[2m).[22mtoHaveBeenCalledWith[2m([22m[32m...expected[39m[2m)[22m
+
+    Expected: [32m{"email": "test@example.com", "isActive": true, "name": "Test User", "password": "password"}[39m
+
+    Number of calls: [31m0[39m
+[2m[22m
+[2m    [0m [90m 40 |[39m       [36mconst[39m result [33m=[39m [36mawait[39m userController[33m.[39mcreate(createUserDto)[33m;[39m[22m
+[2m     [90m 41 |[39m       expect(result)[33m.[39mtoBe([32m'User created'[39m)[33m;[39m[22m
+[2m    [31m[1m>[22m[2m[39m[90m 42 |[39m       expect(userService[33m.[39mcreate)[33m.[39mtoHaveBeenCalledWith(createUserDto)[33m;[39m[22m
+[2m     [90m    |[39m                                  [31m[1m^[22m[2m[39m[22m
+[2m     [90m 43 |[39m     })[33m;[39m[22m
+[2m     [90m 44 |[39m   })[33m;[39m[22m
+[2m     [90m 45 |[39m })[33m;[39m[0m[22m
+[2m[22m
+[2m      [2mat Object.<anonymous> ([22m[2m[0m[36muser/user.controller.spec.ts[39m[0m[2m:42:34)[22m[2m[22m
+
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2msrc/user/[22m[1muser.controller.spec.ts[22m
+
+[1mTest Suites: [22m[1m[32m2 passed[39m[22m, 2 of 3 total
+[1mTests:       [22m[1m[32m2 passed[39m[22m, 2 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        2 s[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A[999D[K[1mTest Suites: [22m[1m[31m1 failed[39m[22m, [1m[32m2 passed[39m[22m, 3 total
+[1mTests:       [22m[1m[31m1 failed[39m[22m, [1m[32m3 passed[39m[22m, 4 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        3.011 s
+[2mRan all test suites[22m[2m.[22m
+[1G[0K⠙[1G[0K[1mnpm[22m [96mnotice[39m
+[1mnpm[22m [96mnotice[39m New [31mmajor[39m version of npm available! [31m10.8.2[39m -> [34m11.1.0[39m
+[1mnpm[22m [96mnotice[39m Changelog: [34mhttps://github.com/npm/cli/releases/tag/v11.1.0[39m
+[1mnpm[22m [96mnotice[39m To update run: [4mnpm install -g npm@11.1.0[24m
+[1mnpm[22m [96mnotice[39m
+[1G[0K⠙[1G[0K

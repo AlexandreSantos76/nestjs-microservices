@@ -1,24 +1,28 @@
-import { IsEmail, IsNotEmpty, IsString, IsBoolean, IsOptional } from '@nestjs/class-validator';
-
-export class CreateUserDto {
-    @IsEmail()
-    readonly email: string;
-    @IsString()
-    @IsNotEmpty()
-    readonly password: string;
-    @IsString()
-    readonly name: string;
-    @IsString()
-    @IsOptional()
-    readonly role?: RoleEnum;
-    @IsNotEmpty()
-    readonly isActive: boolean;
-
-}
+import {IsEmail, IsEnum, IsNotEmpty, IsOptional, IsString, MinLength} from 'class-validator';
 
 enum RoleEnum {
-    SUPER = 'super',
-    ADMIN = 'admin',
-    USER = 'user',
-    GUEST = 'guest'
+  SUPER = 'SUPER',
+  ADMIN = 'ADMIN',
+  USER = 'USER',
+}
+export class CreateUserDto {
+  constructor(partial: Partial<CreateUserDto>) {
+    Object.assign(this, partial);
+  }
+
+  @IsEmail({}, {message: 'Email inválido'})
+  @IsNotEmpty({message: 'Email é obrigatório'})
+  readonly email: string;
+
+  @IsNotEmpty({message: 'Nome é obrigatório'})
+  @IsString({message: 'Nome inválido'})
+  @MinLength(3, {message: 'Nome deve ter no mínimo 3 caracteres'})
+  readonly name: string;
+
+  @IsEnum(RoleEnum, {message: 'Role inválida'})
+  @IsOptional()
+  readonly role?: RoleEnum;
+
+  @IsNotEmpty()
+  readonly isActive: boolean;
 }

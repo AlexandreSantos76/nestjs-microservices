@@ -1,0 +1,17 @@
+
+> @fullcycle/common@0.0.1 build /home/xande/jobs/full-cycle/nestjs-microservices/packages/common
+> nest build
+
+[96msrc/lib/error-handler.module.ts[0m:[93m2[0m:[93m35[0m - [91merror[0m[90m TS2307: [0mCannot find module 'error-handler.service' or its corresponding type declarations.
+
+[7m2[0m import {ErrorHandlerService} from 'error-handler.service';
+[7m [0m [91m                                  ~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/lib/error-handler.module.ts[0m:[93m3[0m:[93m34[0m - [91merror[0m[90m TS2307: [0mCannot find module 'rpc-exception.filter' or its corresponding type declarations.
+
+[7m3[0m import {RpcExceptionFilter} from 'rpc-exception.filter';
+[7m [0m [91m                                 ~~~~~~~~~~~~~~~~~~~~~~[0m
+
+Found 2 error(s).
+
+[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 1.[39m
+[43m[30m WARN [39m[49m  Local package.json exists, but node_modules missing, did you mean to install?

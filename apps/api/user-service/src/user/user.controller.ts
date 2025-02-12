@@ -1,37 +1,72 @@
-import {Controller} from '@nestjs/common';
+import {ErrorHandlerService} from '@fullcycle/common';
+import {Controller, Logger} from '@nestjs/common';
 import {MessagePattern, Payload} from '@nestjs/microservices';
+import {CreateUserDto} from './dto/create-user.dto';
 import {UpdateUserDto} from './dto/update-user.dto';
 import {UserService} from './user.service';
 
+
 @Controller()
 export class UserController {
-  constructor(private readonly userService: UserService) {}
+  private readonly logger = new Logger(UserController.name);
+  constructor(
+    private readonly userService: UserService,
+    private readonly errorHandler: ErrorHandlerService
+
+  ) {}
 
   @MessagePattern({cmd: 'createUser'})
-  create(data: any) {
-    console.log("Received data:", data); // Log the received data for debugging
-    // Access the data from the body
-    const name = data?.name; //example, if the body has the property name
-    return `hello world - user-service:create ${name ? name : ''}`;
+  async create(@Payload() data: CreateUserDto) {
+    try {
+      return await this.userService.create(data);
+    } catch (error) {
+      this.errorHandler.handleDatabaseError(error);
+    }
   }
 
-  @MessagePattern('findAllUser')
-  findAll() {
-    return this.userService.findAll();
+  @MessagePattern({cmd: 'findAllUsers'})
+  async findAll() {
+    try {
+      return await this.userService.findAll();
+    } catch (error) {
+      this.errorHandler.handleDatabaseError(error);
+    }
   }
 
-  @MessagePattern('findOneUser')
-  findOne(@Payload() id: number) {
-    return this.userService.findOne(id);
+  @MessagePattern({cmd: 'findUserById'})
+  async findById(@Payload() data: {id: number}) {
+    try {
+      return await this.userService.findById(data.id);
+    } catch (error) {
+      this.errorHandler.handleDatabaseError(error);
+    }
   }
 
-  @MessagePattern('updateUser')
-  update(@Payload() updateUserDto: UpdateUserDto) {
-    return this.userService.update(updateUserDto.id, updateUserDto);
+  @MessagePattern({cmd: 'findUserByEmail'})
+  async findByEmail(@Payload() data: {email: string}) {
+    try {
+      return await this.userService.findByEmail(data.email);
+    } catch (error) {
+      this.errorHandler.handleDatabaseError(error);
+    }
   }
 
-  @MessagePattern('removeUser')
-  remove(@Payload() id: number) {
-    return this.userService.remove(id);
+  @MessagePattern({cmd: 'searchUsers'})
+  async search(@Payload() data: {id?: number; email?: string; name?: string}) {
+    try {
+      return await this.userService.search(data);
+    } catch (error) {
+      this.errorHandler.handleDatabaseError(error);
+    }
   }
+
+  @MessagePattern({cmd: 'updateUser'})
+  async update(@Payload() data: UpdateUserDto) {
+    try {
+      return await this.userService.update(data.id, data);
+    } catch (error) {
+      this.errorHandler.handleDatabaseError(error);
+    }
+  }
+
 }

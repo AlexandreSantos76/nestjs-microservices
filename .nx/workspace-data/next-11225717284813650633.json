@@ -98,5 +98,3155 @@
         "spa": false
       }
     }
+  },
+  "11034673640289395808": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "737136332197860763": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "9871646299511263734": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "12831164664556849014": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "11874043186020090984": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "14829870225070816539": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "8202181522748194628": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "13283191600544680171": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "10824570520008868389": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "11996896369594892613": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "7734575515391490058": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "11281229522221863167": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "15429151563832997689": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "14183984021631442171": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "17089354894777992011": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "16161204550487302598": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "549806142665359993": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "581469331580161166": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "11345096047413224675": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "15696520739649369696": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "8411447696257059925": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "3071319189643502251": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "1799476795584669240": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "13452439169573807998": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "4544567202120238846": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "1388257891004060662": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "9360312334917981074": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "17439358267276970483": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "17968008465014017665": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "7165865573781338494": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "3150820503898161038": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "15156725324962517141": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "12161131724600548480": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "9373809737292914946": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "14676620742100624261": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "18088112986543431938": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "13989613520846923397": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "2196315665057777811": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "10370844798047710165": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "2787950545153253427": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "3536218375115383546": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "7332037432767694762": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "3494435473166254697": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "4124954328263253678": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "13391084130205444010": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "3024382986126641626": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "8267672508318837006": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "324413794586461292": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "9923614802198486115": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "6459050396076353928": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "6193383673020531642": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "4732779479335708470": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "3330556638730732905": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "932511474380378986": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "3490703238241682964": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "10479916544005502701": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "4545742671586496077": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "9563886376379272294": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "15921364136742924066": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "18024236503616317579": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "15124805200852619111": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "15477561880183214878": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "4136944399781750791": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/frontend/dashboard",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/frontend/dashboard/.next",
+        "{workspaceRoot}/apps/frontend/dashboard/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/frontend/dashboard"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
   }
 }

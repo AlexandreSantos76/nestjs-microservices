@@ -5,7 +5,6 @@ import {UserRepository} from '../repository/user.repository';
 interface CreateUserRequest {
   name: string;
   email: string;
-  password: string;
   role: string;
   isActive: boolean;
 }
@@ -13,11 +12,10 @@ interface CreateUserRequest {
 @Injectable()
 export class CreateUserUseCase {
   constructor(private readonly userRepository: UserRepository) {}
-  async execute({name, email, password, role, isActive}: CreateUserRequest) {
+  async execute({name, email, role, isActive}: CreateUserRequest) {
     const user = new User({
       name,
       email,
-      password,
       role,
       isActive
     });

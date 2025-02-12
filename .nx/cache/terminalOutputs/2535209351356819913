@@ -1,0 +1,55 @@
+
+> @fullcycle/dashboard@0.1.0 build /home/xande/jobs/full-cycle/nestjs-microservices/apps/frontend/dashboard
+> next build
+
+   [1m[38;2;173;127;168m▲ Next.js 15.1.6[39m[22m
+
+ [37m[1m [22m[39m Creating an optimized production build ...
+ [32m[1m✓[22m[39m Compiled successfully
+[?25l [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G[?25h[31m
+Failed to compile.[39m
+[?25l [36m.[39m [2K[1G[?25h
+[36m./src/components/Charts/ChartOne.tsx[39m
+[33m124[39m:[33m11[39m  [31m[1mError[22m[39m: 'ChartOneState' is defined but never used.  [90m[1m@typescript-eslint/no-unused-vars[22m[39m
+
+[36m./src/components/Charts/ChartThree.tsx[39m
+[33m5[39m:[33m11[39m  [31m[1mError[22m[39m: 'ChartThreeState' is defined but never used.  [90m[1m@typescript-eslint/no-unused-vars[22m[39m
+
+[36m./src/components/Charts/ChartTwo.tsx[39m
+[33m71[39m:[33m11[39m  [31m[1mError[22m[39m: 'ChartTwoState' is defined but never used.  [90m[1m@typescript-eslint/no-unused-vars[22m[39m
+
+[36m./src/components/Dropdowns/DropdownDefault.tsx[39m
+[33m6[39m:[33m26[39m  [31m[1mError[22m[39m: Unexpected any. Specify a different type.  [90m[1m@typescript-eslint/no-explicit-any[22m[39m
+[33m7[39m:[33m27[39m  [31m[1mError[22m[39m: Unexpected any. Specify a different type.  [90m[1m@typescript-eslint/no-explicit-any[22m[39m
+
+[36m./src/components/FormElements/MultiSelect.tsx[39m
+[33m18[39m:[33m30[39m  [31m[1mError[22m[39m: Unexpected any. Specify a different type.  [90m[1m@typescript-eslint/no-explicit-any[22m[39m
+[33m19[39m:[33m26[39m  [31m[1mError[22m[39m: Unexpected any. Specify a different type.  [90m[1m@typescript-eslint/no-explicit-any[22m[39m
+
+[36m./src/components/Header/DropdownMessage.tsx[39m
+[33m1[39m:[33m10[39m  [31m[1mError[22m[39m: 'useEffect' is defined but never used.  [90m[1m@typescript-eslint/no-unused-vars[22m[39m
+[33m1[39m:[33m21[39m  [31m[1mError[22m[39m: 'useRef' is defined but never used.  [90m[1m@typescript-eslint/no-unused-vars[22m[39m
+
+[36m./src/components/Maps/MapOne.tsx[39m
+[33m9[39m:[33m11[39m  [31m[1mError[22m[39m: 'mapOne' is assigned a value but never used.  [90m[1m@typescript-eslint/no-unused-vars[22m[39m
+
+[36m./src/components/Sidebar/SidebarDropdown.tsx[39m
+[33m5[39m:[33m36[39m  [31m[1mError[22m[39m: Unexpected any. Specify a different type.  [90m[1m@typescript-eslint/no-explicit-any[22m[39m
+[33m11[39m:[33m26[39m  [31m[1mError[22m[39m: Unexpected any. Specify a different type.  [90m[1m@typescript-eslint/no-explicit-any[22m[39m
+
+[36m./src/components/Sidebar/SidebarItem.tsx[39m
+[33m6[39m:[33m55[39m  [31m[1mError[22m[39m: Unexpected any. Specify a different type.  [90m[1m@typescript-eslint/no-explicit-any[22m[39m
+[33m15[39m:[33m27[39m  [31m[1mError[22m[39m: Unexpected any. Specify a different type.  [90m[1m@typescript-eslint/no-explicit-any[22m[39m
+[33m18[39m:[33m41[39m  [31m[1mError[22m[39m: Unexpected any. Specify a different type.  [90m[1m@typescript-eslint/no-explicit-any[22m[39m
+
+[36m./src/components/Sidebar/index.tsx[39m
+[33m3[39m:[33m17[39m  [31m[1mError[22m[39m: 'useEffect' is defined but never used.  [90m[1m@typescript-eslint/no-unused-vars[22m[39m
+[33m3[39m:[33m28[39m  [31m[1mError[22m[39m: 'useRef' is defined but never used.  [90m[1m@typescript-eslint/no-unused-vars[22m[39m
+[33m3[39m:[33m36[39m  [31m[1mError[22m[39m: 'useState' is defined but never used.  [90m[1m@typescript-eslint/no-unused-vars[22m[39m
+[33m326[39m:[33m9[39m  [31m[1mError[22m[39m: 'pathname' is assigned a value but never used.  [90m[1m@typescript-eslint/no-unused-vars[22m[39m
+
+[36m./src/hooks/useColorMode.tsx[39m
+[33m11[39m:[33m5[39m  [31m[1mError[22m[39m: Expected an assignment or function call and instead saw an expression.  [90m[1m@typescript-eslint/no-unused-expressions[22m[39m
+
+[36minfo[39m  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+[?25l [36m.[39m [?25h[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 1.[39m

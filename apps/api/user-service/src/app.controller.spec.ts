@@ -26,8 +26,9 @@ describe('AppController', () => {
   });
 
   describe('getHello', () => {
-    it('should return "hello world - user-service"', () => {
-      expect(appController.getHello({name: 'test'})).toBe('hello world - user-service test');
+    it('should return "hello world - user-service"', async () => {
+      const result = await appController.getHello({name: 'test'});
+      expect(result).toBe('hello world - user-service test');
     });
   });
 });
