@@ -1,0 +1,28 @@
+
+> auth@0.0.1 build /home/xande/jobs/full-cycle/nestjs-microservices/apps/api/auth
+> nest build
+
+[96msrc/app.module.ts[0m:[93m1[0m:[93m29[0m - [91merror[0m[90m TS2307: [0mCannot find module '@fullcycle/auth-cognito' or its corresponding type declarations.
+
+[7m1[0m import {CognitoModule} from '@fullcycle/auth-cognito';
+[7m [0m [91m                            ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/auth.controller.ts[0m:[93m16[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'signOut' does not exist on type 'AuthService'.
+
+[7m16[0m     return this.authService.signOut(data.token);
+[7m  [0m [91m                            ~~~~~~~[0m
+[96msrc/auth.controller.ts[0m:[93m21[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'validateToken' does not exist on type 'AuthService'.
+
+[7m21[0m     return this.authService.validateToken(data.token);
+[7m  [0m [91m                            ~~~~~~~~~~~~~[0m
+[96msrc/auth.service.ts[0m:[93m1[0m:[93m9[0m - [91merror[0m[90m TS2305: [0mModule '"@nestjs-cognito/auth"' has no exported member 'CognitoAuthService'.
+
+[7m1[0m import {CognitoAuthService} from '@nestjs-cognito/auth';
+[7m [0m [91m        ~~~~~~~~~~~~~~~~~~[0m
+[96msrc/guards/jwt.strategy.ts[0m:[93m27[0m:[93m48[0m - [91merror[0m[90m TS2339: [0mProperty 'getUserByEmail' does not exist on type 'AuthService'.
+
+[7m27[0m     const cognitoUser = await this.authService.getUserByEmail(payload.username);
+[7m  [0m [91m                                               ~~~~~~~~~~~~~~[0m
+
+Found 5 error(s).
+
+[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 1.[39m

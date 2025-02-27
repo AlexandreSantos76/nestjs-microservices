@@ -1,0 +1,8 @@
+
+> @fullcycle/auth-utils@0.0.1 build /home/xande/jobs/full-cycle/nestjs-microservices/packages/auth-utils
+> nest build
+
+
+[48;2;210;0;75m[1m[38;2;0;0;0m Error [39m[22m[49m Could not find TypeScript configuration file "tsconfig.json". Please, ensure that you are running this command in the appropriate directory (inside Nest workspace).
+
+[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 1.[39m

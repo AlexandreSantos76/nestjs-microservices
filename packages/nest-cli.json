@@ -1,0 +1,25 @@
+{
+  "projects": {
+    "auth-utils": {
+      "type": "library",
+      "root": "libs/auth-utils",
+      "entryFile": "index",
+      "sourceRoot": "libs/auth-utils/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/auth-utils/tsconfig.lib.json"
+      }
+    },
+    "guards": {
+      "type": "library",
+      "root": "libs/guards",
+      "entryFile": "index",
+      "sourceRoot": "libs/guards/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/guards/tsconfig.lib.json"
+      }
+    }
+  },
+  "compilerOptions": {
+    "webpack": true
+  }
+}

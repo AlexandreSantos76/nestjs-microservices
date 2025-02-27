@@ -1,20 +1,20 @@
 {
   "run": {
-    "command": "nx build @fullcycle/common",
-    "startTime": "2025-02-12T22:31:57.414Z",
-    "endTime": "2025-02-12T22:31:57.465Z",
+    "command": "nx build auth",
+    "startTime": "2025-02-26T15:42:54.629Z",
+    "endTime": "2025-02-26T15:42:58.057Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "@fullcycle/common:build",
+      "taskId": "auth:build",
       "target": "build",
-      "projectName": "@fullcycle/common",
-      "hash": "16785616449357016481",
-      "startTime": "2025-02-12T22:31:57.425Z",
-      "endTime": "2025-02-12T22:31:57.448Z",
+      "projectName": "auth",
+      "hash": "10216339679800629202",
+      "startTime": "2025-02-26T15:42:54.638Z",
+      "endTime": "2025-02-26T15:42:58.057Z",
       "params": "",
-      "cacheStatus": "local-cache-hit",
+      "cacheStatus": "cache-miss",
       "status": 0
     }
   ]
